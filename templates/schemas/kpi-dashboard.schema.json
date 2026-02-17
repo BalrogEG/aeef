@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aaee.buildstudio.app/schemas/kpi-dashboard.schema.json",
+  "title": "AEEF KPI Dashboard Payload",
+  "type": "object",
+  "required": ["snapshot_date", "productivity", "risk", "financial"],
+  "properties": {
+    "snapshot_date": {"type": "string", "format": "date"},
+    "productivity": {
+      "type": "object",
+      "required": ["idea_to_prototype_days", "pr_cycle_time_hours"],
+      "properties": {
+        "idea_to_prototype_days": {"type": "number", "minimum": 0},
+        "pr_cycle_time_hours": {"type": "number", "minimum": 0},
+        "deployment_frequency_per_week": {"type": "number", "minimum": 0}
+      },
+      "additionalProperties": true
+    },
+    "risk": {
+      "type": "object",
+      "required": ["ai_related_incidents", "critical_vulnerabilities"],
+      "properties": {
+        "ai_related_incidents": {"type": "integer", "minimum": 0},
+        "critical_vulnerabilities": {"type": "integer", "minimum": 0},
+        "ai_defect_escape_rate": {"type": "number", "minimum": 0}
+      },
+      "additionalProperties": true
+    },
+    "financial": {
+      "type": "object",
+      "required": ["cost_per_feature"],
+      "properties": {
+        "cost_per_feature": {"type": "number", "minimum": 0},
+        "engineering_hours_saved": {"type": "number", "minimum": 0},
+        "estimated_roi": {"type": "number"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

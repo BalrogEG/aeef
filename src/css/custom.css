@@ -1,0 +1,401 @@
+/**
+ * AEEF Standards — Custom Theme
+ * Enterprise Standards for AI-Accelerated Engineering
+ */
+
+:root {
+  /* Primary palette */
+  --ifm-color-primary: #1a365d;
+  --ifm-color-primary-dark: #152c4d;
+  --ifm-color-primary-darker: #122948;
+  --ifm-color-primary-darkest: #0e213b;
+  --ifm-color-primary-light: #1f406d;
+  --ifm-color-primary-lighter: #224472;
+  --ifm-color-primary-lightest: #2b5590;
+
+  /* Accent colors */
+  --aeef-accent: #2b6cb0;
+  --aeef-teal: #319795;
+  --aeef-mandatory: #c53030;
+  --aeef-recommended: #2b6cb0;
+  --aeef-deprecated: #718096;
+  --aeef-governance: #6b46c1;
+  --aeef-success: #38a169;
+
+  /* Typography */
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --ifm-heading-font-family: var(--ifm-font-family-base);
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.65;
+
+  /* Layout */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-navbar-height: 4rem;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #63b3ed;
+  --ifm-color-primary-dark: #4ba5e9;
+  --ifm-color-primary-darker: #3f9ee7;
+  --ifm-color-primary-darkest: #1f88de;
+  --ifm-color-primary-light: #7bc1f1;
+  --ifm-color-primary-lighter: #87c7f3;
+  --ifm-color-primary-lightest: #b1daf7;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Footer */
+.footer--dark {
+  background-color: #0e213b;
+}
+
+/* Sidebar */
+.menu__link {
+  font-size: 0.9rem;
+}
+
+.menu__list-item-collapsible .menu__link {
+  font-weight: 600;
+}
+
+/* Admonitions */
+.admonition {
+  border-left-width: 4px;
+}
+
+/* Tables */
+table {
+  display: table;
+  width: 100%;
+}
+
+table th {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  font-weight: 600;
+}
+
+[data-theme='dark'] table th {
+  background-color: rgba(99, 179, 237, 0.2);
+  color: var(--ifm-color-primary);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.15em 0.5em;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: 0.25rem;
+}
+
+.badge--mandatory {
+  background-color: var(--aeef-mandatory);
+  color: white;
+}
+
+.badge--recommended {
+  background-color: var(--aeef-recommended);
+  color: white;
+}
+
+.badge--governance {
+  background-color: var(--aeef-governance);
+  color: white;
+}
+
+.badge--active {
+  background-color: var(--aeef-success);
+  color: white;
+}
+
+.badge--draft {
+  background-color: #ecc94b;
+  color: #1a202c;
+}
+
+.badge--deprecated {
+  background-color: var(--aeef-deprecated);
+  color: white;
+}
+
+/* Role cards */
+.role-card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.role-card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.role-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-primary);
+}
+
+.role-card p {
+  margin: 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.9rem;
+}
+
+/* Pillar cards */
+.pillar-card {
+  border: 2px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.pillar-card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.pillar-card .pillar-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.pillar-card h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.pillar-card p {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+  margin: 0;
+}
+
+/* Track comparison cards */
+.track-card {
+  border: 2px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 2rem;
+  flex: 1;
+  transition: all 0.2s ease;
+}
+
+.track-card:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.track-card h2 {
+  color: var(--ifm-color-primary);
+}
+
+/* Stat callout cards */
+.stat-card {
+  background: linear-gradient(135deg, var(--ifm-color-primary) 0%, var(--aeef-accent) 100%);
+  color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-card .stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card .stat-label {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Maturity progress bar */
+.maturity-bar {
+  display: flex;
+  gap: 4px;
+  margin: 2rem 0;
+}
+
+.maturity-bar .level {
+  flex: 1;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.maturity-bar .level:hover {
+  opacity: 0.9;
+  text-decoration: none;
+  color: white;
+}
+
+.maturity-bar .level-1 { background-color: #c53030; }
+.maturity-bar .level-2 { background-color: #dd6b20; }
+.maturity-bar .level-3 { background-color: #d69e2e; }
+.maturity-bar .level-4 { background-color: #38a169; }
+.maturity-bar .level-5 { background-color: #2b6cb0; }
+
+/* Hero section */
+.hero-section {
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 50%, #319795 100%);
+  color: white;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-section .subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.hero-section .hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-section .hero-buttons a {
+  padding: 0.75rem 2rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.hero-section .hero-buttons .primary-btn {
+  background: white;
+  color: #1a365d;
+}
+
+.hero-section .hero-buttons .primary-btn:hover {
+  background: #f7fafc;
+  transform: translateY(-1px);
+}
+
+.hero-section .hero-buttons .secondary-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-section .hero-buttons .secondary-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
+}
+
+/* Section containers */
+.section {
+  padding: 3rem 0;
+}
+
+.section-alt {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 3rem 0;
+}
+
+[data-theme='dark'] .section-alt {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.section .section-subtitle {
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grid layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 996px) {
+  .grid-2 { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-5 { grid-template-columns: repeat(3, 1fr); }
+
+  .hero-section h1 { font-size: 2rem; }
+  .hero-section .subtitle { font-size: 1rem; }
+}
+
+@media (max-width: 576px) {
+  .grid-3 { grid-template-columns: 1fr; }
+  .grid-4 { grid-template-columns: 1fr; }
+  .grid-5 { grid-template-columns: repeat(2, 1fr); }
+}
