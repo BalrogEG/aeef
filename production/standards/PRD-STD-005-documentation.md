@@ -7,11 +7,11 @@ description: "Documentation requirements for AI-assisted development."
 # PRD-STD-005: Documentation Requirements
 
 **Standard ID:** PRD-STD-005
-**Version:** 1.0
+**Version:** 1.1
 **Status:** Active
 **Compliance Level:** Level 3 (Optimized)
 **Effective Date:** 2025-01-15
-**Last Reviewed:** 2026-01-15
+**Last Reviewed:** 2026-02-18
 
 ## 1. Purpose
 
@@ -37,6 +37,9 @@ This standard applies to:
 | **Prompt Documentation** | Records of the prompts, constraints, and context used to generate production code |
 | **Knowledge Artifact** | Any document, comment, diagram, or record that preserves understanding of code purpose and behavior |
 | **Inline Documentation** | Comments and documentation strings embedded directly in source code |
+| **AI Interaction History** | A concise record of prompt iterations, rejected alternatives, and rationale for selected AI-assisted implementation choices |
+| **Documentation Drift** | Any mismatch between current system behavior and the documentation that describes it |
+| **D.O.C.S Coverage** | Documentation coverage across Domain context, Operations context, Change history, and Support guidance |
 
 ## 4. Requirements
 
@@ -124,6 +127,90 @@ Example:
 **REQ-005-20:** Code walkthroughs or recorded explanations SHOULD be created for complex AI-generated subsystems to supplement written documentation.
 :::
 
+### 4.5 Lifecycle Documentation Coverage (D.O.C.S)
+
+:::danger MANDATORY
+**REQ-005-21:** Projects with AI-assisted production components MUST maintain D.O.C.S coverage for material components:
+- **Domain context:** purpose, business constraints, assumptions, and non-goals
+- **Operations context:** dependencies, integration points, runtime requirements, monitoring/alert signals, and failure modes
+- **Change context:** architecture decision references, change log, and links to relevant AI interaction records
+- **Support context:** troubleshooting steps, known issues, escalation path, and owner/contact information
+
+**REQ-005-22:** API, service, and integration documentation for AI-assisted components MUST include:
+- Input/output contracts and versioning expectations
+- Error semantics and retry/idempotency behavior where applicable
+- At least one valid request/response example for externally consumed interfaces
+:::
+
+:::warning RECOMMENDED
+**REQ-005-23:** Organizations SHOULD standardize D.O.C.S documentation templates so teams can produce consistent lifecycle documentation with low overhead.
+
+**REQ-005-24:** Lifecycle documentation SHOULD be co-located with source code and linked from the owning component's README or service catalog entry.
+:::
+
+### 4.6 AI Interaction History
+
+:::danger MANDATORY
+**REQ-005-25:** For high-risk or production-critical AI-assisted changes, teams MUST preserve an AI Interaction History record that captures:
+- Major prompt/refinement iterations (not every autocomplete event)
+- Rejected alternatives and rejection rationale
+- Final accepted approach and why it was chosen
+
+**REQ-005-26:** AI Interaction History records MUST link to applicable provenance metadata and ADRs. Where prompt content cannot be stored, records MUST include a redaction note and a stable reference (hash/ID/ticket) for auditability.
+:::
+
+:::warning RECOMMENDED
+**REQ-005-27:** Teams SHOULD capture common failure patterns from interaction history (for example, recurring hallucination patterns or unsafe defaults) and feed them into prompt templates and reviewer checklists.
+:::
+
+### 4.7 Documentation Review Workflow
+
+:::danger MANDATORY
+**REQ-005-28:** Documentation updates for AI-assisted changes MUST pass a documented review workflow:
+- **Stage 1: Author self-review** for completeness, correctness, and redaction compliance
+- **Stage 2: Technical peer review** for accuracy versus implementation
+- **Stage 3: Consumer-perspective validation** for medium/high-risk changes (review by a likely consumer or an engineer not involved in the implementation)
+
+**REQ-005-29:** Pull requests with AI-assisted changes MUST include explicit documentation review status in the PR template/checklist.
+
+**REQ-005-30:** Material documentation defects identified in review (missing operational runbook data, incorrect interface contracts, unsafe guidance, or stale compliance statements) MUST block merge until resolved.
+:::
+
+:::warning RECOMMENDED
+**REQ-005-31:** Teams SHOULD maintain a rotating documentation reviewer roster for critical domains to avoid documentation blind spots.
+:::
+
+### 4.8 Currency and Drift Controls
+
+:::danger MANDATORY
+**REQ-005-32:** Documentation impacted by behavior, interface, deployment, or operational changes MUST be updated in the same pull request or in a linked, pre-release follow-up with clear ownership and due date.
+
+**REQ-005-33:** Teams MUST define freshness SLAs for critical documentation classes (for example, runbooks, integration contracts, and incident response guides) and track compliance with those SLAs.
+:::
+
+:::warning RECOMMENDED
+**REQ-005-34:** Teams SHOULD implement automated drift checks where practical (examples: contract test references, broken-link checks, schema compatibility checks, and runbook validation drills).
+
+**REQ-005-35:** Teams SHOULD run monthly stale-documentation reviews and create remediation items for any artifact that violates freshness SLAs.
+:::
+
+### 4.9 Documentation Effectiveness Metrics
+
+:::danger MANDATORY
+**REQ-005-36:** Organizations at Maturity Level 3 or higher MUST measure documentation effectiveness at least quarterly using, at minimum:
+- Documentation Currency Rate
+- Documentation Comprehension Validation Rate
+- Documentation Reference Frequency
+- Documentation Maintenance Efficiency
+- Support Ticket Deflection attributable to documentation
+
+**REQ-005-37:** Documentation effectiveness metrics MUST be reviewed in team retrospectives or operational reviews and linked to corrective actions when trends degrade.
+:::
+
+:::warning RECOMMENDED
+**REQ-005-38:** Organizations SHOULD include documentation effectiveness targets in engineering KPI dashboards and calibrate targets by maturity level.
+:::
+
 ## 5. Implementation Guidance
 
 ### AI Annotation Standards by Language
@@ -177,8 +264,75 @@ For each AI-generated component, verify:
 - [ ] Business logic has "why" comments, not just "what" comments
 - [ ] Architecture decisions are captured in ADRs
 - [ ] Critical prompts are preserved as project artifacts
+- [ ] D.O.C.S lifecycle coverage exists for affected components
+- [ ] AI interaction history exists for high-risk/production-critical changes
+- [ ] Documentation review workflow stages are completed and recorded
+- [ ] Critical docs meet freshness SLA and no known drift is unresolved
 - [ ] Knowledge preservation document is up to date (if applicable)
 - [ ] Documentation is reviewed as part of the code review process
+
+### D.O.C.S Lifecycle Template
+
+```markdown
+# [Component/System] Documentation
+
+## D: Domain Context
+- Purpose and business objective
+- Key constraints, assumptions, and non-goals
+- Data classification and compliance notes
+
+## O: Operations Context
+- Runtime dependencies and integration points
+- Required resources (CPU/memory/storage/queue limits)
+- Monitoring signals, alerts, and SLO/SLA references
+- Failure modes and fallback behavior
+
+## C: Change Context
+- Relevant ADR links
+- AI interaction history references
+- Recent change log and pending deprecations
+
+## S: Support Context
+- Troubleshooting playbook
+- Known issues and workarounds
+- Escalation path, owner, and on-call handoff references
+```
+
+### AI Interaction History Template
+
+```markdown
+# AI Interaction History: [Change/Feature]
+
+- Ticket/PR: [ID]
+- Risk tier: [Low/Medium/High]
+- Tool/model: [tool + version]
+
+## Iteration Summary
+1. Prompt iteration 1: [goal + outcome]
+2. Prompt iteration 2: [goal + outcome]
+3. Final iteration: [accepted outcome]
+
+## Rejected Alternatives
+- [Alternative A] -- rejected because [...]
+- [Alternative B] -- rejected because [...]
+
+## Final Rationale
+- Why selected approach was chosen
+- Link to ADR / provenance record / tests
+
+## Redaction Notes (if applicable)
+- [Prompt content redacted due to policy X; reference hash/ticket]
+```
+
+### Documentation Effectiveness Metrics (Minimum Set)
+
+| Metric | Definition | Suggested Reporting Cadence |
+|---|---|---|
+| Documentation Currency Rate | % of critical docs within freshness SLA | Monthly |
+| Comprehension Validation Rate | % of sampled engineers/consumers who can complete key tasks using docs without ad hoc help | Quarterly |
+| Reference Frequency | Number of accesses/citations of critical docs per release cycle | Monthly |
+| Maintenance Efficiency | Median elapsed time to produce/update required docs for a change | Monthly |
+| Support Ticket Deflection | % reduction in repeated support issues after documentation updates | Quarterly |
 
 ## 6. Exceptions & Waiver Process
 
@@ -195,6 +349,8 @@ Waivers MUST be approved by the engineering lead and documented in the project's
 - [PRD-STD-001: Prompt Engineering](/production/standards/PRD-STD-001-prompt-engineering/) -- Prompt structure and library standards
 - [PRD-STD-002: Code Review Standards](/production/standards/PRD-STD-002-code-review/) -- Documentation is reviewed as part of code review
 - [PRD-STD-006: Technical Debt Management](/production/standards/PRD-STD-006-technical-debt/) -- Documentation of known debt
+- [Code Provenance & Attribution](/pillars/pillar-2-governance-risk/code-provenance/) -- Source-of-truth linkage for AI interaction metadata
+- [Productivity Metrics](/pillars/kpi/productivity-metrics/) -- KPI implementation guidance for documentation effectiveness measures
 - [Pillar 3: People & Skills](/pillars/pillar-5-organizational-enablement/) -- Knowledge preservation supports team skill development
 - [Maturity Model](/pillars/maturity/) -- Documentation maturity assessment
 
@@ -204,3 +360,4 @@ Waivers MUST be approved by the engineering lead and documented in the project's
 |---|---|---|---|
 | 1.0 | 2025-01-15 | AEEF Standards Committee | Initial release |
 | 1.0.1 | 2026-01-15 | AEEF Standards Committee | Added language-specific annotation table; expanded ADR template |
+| 1.1.0 | 2026-02-18 | AEEF Standards Committee | Added D.O.C.S lifecycle coverage, AI interaction history requirements, documentation review workflow, drift controls, and documentation effectiveness metrics |

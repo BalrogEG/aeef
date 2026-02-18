@@ -89,6 +89,36 @@ const sidebars: SidebarsConfig = {
         'qa-lead/automation-priorities',
       ],
     },
+    {
+      type: 'category',
+      label: 'Security Engineer',
+      link: {type: 'doc', id: 'security-engineer/index'},
+      items: [
+        'security-engineer/secure-coding-guardrails',
+        'security-engineer/threat-modeling-ai-code',
+        'security-engineer/vulnerability-response-slas',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Platform / DevOps Engineer',
+      link: {type: 'doc', id: 'platform-engineer/index'},
+      items: [
+        'platform-engineer/pipeline-guardrails',
+        'platform-engineer/tooling-provisioning',
+        'platform-engineer/observability-quality-gates',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Compliance & Risk Officer',
+      link: {type: 'doc', id: 'compliance-officer/index'},
+      items: [
+        'compliance-officer/policy-control-mapping',
+        'compliance-officer/audit-evidence-pack',
+        'compliance-officer/third-party-ai-risk',
+      ],
+    },
   ],
 };
 

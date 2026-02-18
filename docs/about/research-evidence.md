@@ -55,10 +55,26 @@ AEEF uses a mix of external research, regulatory texts, and implementation assum
 
 - NIST AI Risk Management Framework 1.0  
   https://www.nist.gov/itl/ai-risk-management-framework
+- NIST Secure Software Development Framework (SP 800-218)  
+  https://csrc.nist.gov/pubs/sp/800/218/final
 - EU AI Act (Regulation (EU) 2024/1689)  
   https://eur-lex.europa.eu/eli/reg/2024/1689/oj
 - ISO/IEC 42001 (AI management system standard overview)  
   https://www.iso.org/standard/81230.html
+- ISO/IEC 42006 (AIMS certification body requirements overview)  
+  https://www.iso.org/standard/44522.html
+- ISO/IEC 23894 (AI risk management guidance overview)  
+  https://www.iso.org/standard/77304.html
+- OWASP Top 10 for LLM Applications  
+  https://owasp.org/www-project-top-10-for-large-language-model-applications/
+- SDAIA PDPL Knowledge Center (Saudi Arabia)  
+  https://dgp.sdaia.gov.sa/wps/portal/pdp/knowledgecenter/
+- National Cybersecurity Authority ECC (Saudi Arabia)  
+  https://nca.gov.sa/en/regulatory-documents/controls-list/ecc/
+- National Cybersecurity Authority CCC (Saudi Arabia)  
+  https://nca.gov.sa/en/regulatory-documents/controls-list/ccc/
+- Digital Government Authority IT Governance Controls v2.0 (Saudi Arabia)  
+  https://dga.gov.sa/en/regulatory-documents/IT-governance-controls-in-digital-government
 
 ## Governance Rules for Claims
 
@@ -73,4 +89,3 @@ AEEF uses a mix of external research, regulatory texts, and implementation assum
 - [ ] Confirm links are still accessible and current.
 - [ ] Replace stale adoption/security multipliers with newer evidence where available.
 - [ ] Update cross-references in: `docs/about/index.md`, `docs/pillar-1-engineering-discipline/index.md`, `docs/pillar-2-governance-risk/index.md`, `docs/kpi/index.md`, and `transformation/index.md`.
-

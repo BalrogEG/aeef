@@ -96,7 +96,7 @@ Full attribution and metadata standards are defined in [Code Provenance & Attrib
 
 ## Sub-Pages in This Pillar
 
-This pillar is organized into six detailed standards documents:
+This pillar is organized into ten detailed standards documents:
 
 | Document | Focus Area |
 |---|---|
@@ -105,6 +105,10 @@ This pillar is organized into six detailed standards documents:
 | [Intellectual Property Management](./intellectual-property.md) | Licensing implications, copyright, proprietary code protection, open-source considerations |
 | [Security Risk Framework](./security-risk-framework.md) | Threat modeling for AI outputs, OWASP considerations, vulnerability scanning, remediation SLAs |
 | [Compliance & Regulatory Alignment](./compliance-regulatory.md) | SOC 2, ISO 27001, GDPR, HIPAA mapping for AI-assisted development |
+| [AI Standards Crosswalk](./ai-standards-crosswalk.md) | Comparison and gap analysis against ISO 42001, NIST AI RMF, SSDF, OWASP LLM Top 10, EU AI Act |
+| [ISO 42001 Certification Readiness](./iso-42001-certification-readiness.md) | Clause-family alignment, evidence package, and readiness plan for AI management system certification |
+| [KSA Regulatory Profile](./ksa-regulatory-profile.md) | KSA adaptation covering PDPL, NCA controls, DGA controls, and sector overlays |
+| [Government (Middle East) Profile](./government-middle-east-profile.md) | Public-sector controls, assurance package, and branch/overlay strategy for regional government delivery |
 | [Incident Response for AI-Generated Defects](./incident-response.md) | Incident classification, root cause analysis, corrective actions, post-mortem templates |
 
 ## Governance Roles and Responsibilities

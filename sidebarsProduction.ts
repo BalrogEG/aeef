@@ -12,6 +12,7 @@ const sidebars: SidebarsConfig = {
       label: 'Standards & Guidelines',
       link: {type: 'doc', id: 'standards/index'},
       items: [
+        'standards/apply-ready-rollout-kit',
         'standards/PRD-STD-001-prompt-engineering',
         'standards/PRD-STD-002-code-review',
         'standards/PRD-STD-003-testing-requirements',

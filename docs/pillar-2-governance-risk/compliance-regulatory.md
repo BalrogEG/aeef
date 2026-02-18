@@ -8,6 +8,13 @@ description: "Aligning AI-assisted development with regulatory requirements and 
 
 This section maps AI-assisted development practices to regulatory requirements and industry compliance frameworks, including SOC 2 Type II, ISO 27001, GDPR, and HIPAA. AI-assisted development does not exempt organizations from compliance obligations; rather, it introduces new dimensions that existing compliance programs MUST address. The AEEF framework is designed to satisfy these obligations when fully implemented.
 
+For expanded framework comparisons and regional overlays, use:
+
+- [AI Standards Crosswalk](./ai-standards-crosswalk.md)
+- [ISO 42001 Certification Readiness](./iso-42001-certification-readiness.md)
+- [KSA Regulatory Profile](./ksa-regulatory-profile.md)
+- [Government (Middle East) Profile](./government-middle-east-profile.md)
+
 ## Compliance Philosophy
 
 :::info
@@ -106,6 +113,18 @@ The Health Insurance Portability and Accountability Act (HIPAA) applies when AI-
 - Code that handles PHI MUST be classified as Tier 3 (High Risk) and MUST receive security champion review
 - AI-generated code in PHI-processing systems MUST undergo DAST testing before production deployment
 - Business Associate Agreements (BAAs) MUST be in place with any AI tool vendor whose tools process code related to PHI systems
+
+## ISO 42001 and AI Management System Readiness
+
+Organizations pursuing formal AI management system certification SHOULD implement the readiness approach in [ISO 42001 Certification Readiness](./iso-42001-certification-readiness.md). AEEF provides strong control coverage, but certification readiness requires explicit evidence packaging, internal audit cadence, and management review artifacts.
+
+## KSA and Government Regional Adaptation
+
+For operations in Saudi Arabia or public-sector programs in the Middle East:
+
+1. Apply [KSA Regulatory Profile](./ksa-regulatory-profile.md) for PDPL, NCA, and DGA control alignment.
+2. Apply [Government (Middle East) Profile](./government-middle-east-profile.md) where public-sector obligations require stricter sovereign, procurement, and transparency controls.
+3. Treat regional overlays as additive requirements on top of core AEEF controls.
 
 ## Cross-Framework Compliance Summary
 

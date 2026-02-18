@@ -177,6 +177,41 @@ Developer Experience (DevEx) Score measures developer satisfaction with AI-assis
 The Developer Experience Score is most valuable when low scores trigger investigation and action. Organizations SHOULD establish a threshold (e.g., any sub-dimension scoring below 3.0) that triggers a root cause analysis and remediation plan. Low DevEx scores predict adoption resistance and eventual regression in other productivity metrics.
 :::
 
+## KPI-6: Documentation Effectiveness Index
+
+### Definition
+
+Documentation Effectiveness Index measures whether engineering documentation is current, usable, and reducing operational friction in AI-assisted delivery. AI-generated and AI-modified systems increase change velocity; without effective documentation, organizations accumulate hidden rework and support burden that erodes productivity gains.
+
+This KPI aggregates five documentation indicators:
+
+- **Documentation Currency Rate** -- percentage of critical documents within freshness SLA
+- **Comprehension Validation Rate** -- percentage of sampled users who can complete key tasks using documentation without ad hoc assistance
+- **Documentation Reference Frequency** -- usage/access rate of key documentation during delivery and operations
+- **Documentation Maintenance Efficiency** -- median elapsed time to produce or update required documentation per change
+- **Support Ticket Deflection** -- reduction in recurring support issues after documentation updates
+
+### Measurement Method
+
+- **Cadence:** Monthly for operational indicators; quarterly for comprehension validation and support deflection
+- **Data sources:** Repository metadata, docs analytics, runbook drill outcomes, support ticket systems, and team surveys
+- **Aggregation:** Composite score (0-5) or weighted percentage model approved by governance
+- **Minimum requirement:** Each of the five indicators MUST be tracked, even if composite weighting varies by organization
+
+### Targets by Maturity Level
+
+| Maturity Level | Target | Notes |
+|---|---|---|
+| Level 2 | Baseline established | Capture current documentation quality and support burden |
+| Level 3 | Composite >= 3.5 / 5.0 (or equivalent) | Documentation quality is governed and measured |
+| Level 4 | Composite >= 4.0 / 5.0 (or equivalent) | Drift controls and review workflows are consistently enforced |
+| Level 5 | Composite >= 4.5 / 5.0 (or equivalent) | Documentation supports AI-first, low-friction operations |
+
+### Implementation Notes
+
+- Documentation effectiveness SHOULD be reviewed with code review cycle time and incident metrics to identify hidden bottlenecks.
+- Trend degradation SHOULD trigger corrective actions in [PRD-STD-005](/production/standards/PRD-STD-005-documentation/), including freshness remediation and review process hardening.
+
 ## Measurement Infrastructure
 
 ### Recommended Tooling

@@ -6,3 +6,9 @@ Recommended convention:
 
 - `prompts/<domain>/<use-case>/<name>.vX.Y.Z.md`
 - include metadata header with owner, model assumptions, and test evidence
+
+Suggested starting point:
+
+- copy a baseline from `prompt-library/` into this folder
+- tailor it for your codebase and constraints
+- track revisions in PRs as code changes

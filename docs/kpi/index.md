@@ -45,6 +45,7 @@ The following table provides a high-level summary of all core KPIs. Detailed def
 | Feature Throughput per Engineer | Features delivered per engineer per sprint | 20% improvement from baseline | 40% improvement from baseline |
 | Code Review Cycle Time | Elapsed time from PR creation to merge | 25% reduction from baseline | 50% reduction from baseline |
 | Developer Experience Score | Developer satisfaction with AI tools and workflows | >= 3.5 / 5.0 | >= 4.5 / 5.0 |
+| Documentation Effectiveness Index | Composite measure of documentation currency, comprehension, usage, maintenance efficiency, and support deflection | >= 3.5 / 5.0 | >= 4.5 / 5.0 |
 
 ### Risk Metrics Summary
 

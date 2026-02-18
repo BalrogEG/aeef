@@ -12,6 +12,8 @@ This section contains the formal production standards (PRD-STD series) that gove
 
 The PRD-STD series establishes the minimum quality, security, and governance requirements for organizations using AI coding assistants in production development. With 92% of US developers now using AI tools daily and AI co-authored code showing 1.7x more issues and 2.74x higher vulnerability rates, these standards exist to ensure that the velocity gains from AI assistance do not come at the expense of software quality, security, or maintainability.
 
+For teams that need immediate execution guidance, start with the [Apply-Ready Rollout Kit](/production/standards/apply-ready-rollout-kit/). It includes a 30/60/90-day rollout plan, copy-paste prompts, and role ownership mapping for all eight standards.
+
 All standards in this series use RFC 2119 keywords:
 
 - **MUST** / **SHALL** -- Absolute requirements. Non-compliance requires immediate remediation.
