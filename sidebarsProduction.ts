@@ -47,6 +47,7 @@ const sidebars: SidebarsConfig = {
         'tool-guides/ai-code-review',
         'tool-guides/automated-testing-ai',
         'tool-guides/security-scanning-tools',
+        'tool-guides/open-source-onboarding-expert-network',
       ],
     },
   ],

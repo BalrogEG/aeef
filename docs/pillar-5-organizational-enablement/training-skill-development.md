@@ -208,3 +208,44 @@ Beyond formal training, organizations MUST support continuous learning:
 - **External Learning Budget**: Allocate budget for developers to attend AI-related conferences and courses
 - **Internal Knowledge Base**: Maintain a searchable repository of AI-assisted development tips, tricks, and case studies, linked to the [prompt repository](../pillar-3-productivity/index.md)
 - **Pair Programming with AI**: Encourage regular pair programming sessions where developers collaborate on AI-assisted tasks, learning from each other's approaches
+
+## Workforce Localization (Saudi Arabia)
+
+Organizations operating in Saudi Arabia SHOULD track AI engineering skill development metrics aligned with national workforce localization (Nitaqat) targets and Vision 2030 workforce development goals. This section defines workforce development metrics and requirements for Saudi AI engineering programs.
+
+### Saudization Alignment
+
+AI-assisted engineering represents a strategic skill domain for Saudi workforce development. Organizations SHOULD treat AI engineering capability as a priority area for Saudi national development, aligned with SDAIA's goal of training 45,000+ data and AI professionals.
+
+### Workforce Development Metrics
+
+| Metric | Definition | Target | Measurement Method |
+|---|---|---|---|
+| Saudi national AI certification rate | Percentage of Saudi national engineers achieving AEEF Practitioner level or above | >= 80% of Saudi engineering staff within 18 months | Certification records cross-referenced with HR nationality data |
+| Saudi AI Champion ratio | Percentage of AI Champions who are Saudi nationals | Proportional to workforce Saudization ratio, minimum 50% | Champion registry with nationality tracking |
+| Saudi training completion rate | Saudi nationals completing Tier 2 or above training | >= 95% within 12 months of program launch | LMS completion records |
+| Saudi leadership pipeline | Saudi nationals in AI CoE leadership or senior AI engineering roles | Increasing annually; target >= 60% of CoE leadership within 3 years | Organizational chart; role assignment records |
+| Knowledge transfer completion | Percentage of expatriate AI specialists with active knowledge transfer plans | 100% of expatriate AI specialists | Knowledge transfer plan documentation |
+
+### Knowledge Transfer Requirements
+
+Expatriate AI specialists MUST have documented knowledge transfer plans for Saudi national counterparts:
+
+1. Each expatriate AI specialist MUST be paired with at least one Saudi national counterpart for knowledge transfer.
+2. Knowledge transfer plans MUST include specific skills, timeline, milestones, and assessment criteria.
+3. Transfer progress MUST be reviewed quarterly by the CoE or engineering leadership.
+4. Knowledge transfer completion MUST be a factor in expatriate performance evaluation.
+5. Critical AI engineering knowledge MUST NOT be concentrated exclusively in expatriate staff.
+
+### Partnership with Saudi Educational Institutions
+
+Organizations SHOULD build AI engineering talent pipelines through partnerships with Saudi institutions:
+
+- **University partnerships**: Establish internship and co-op programs with Saudi universities offering computer science, data science, and AI programs (e.g., KAUST, KSU, KFUPM, Princess Nourah University).
+- **SDAIA training alignment**: Align internal training programs with SDAIA's national AI training initiatives to enable mutual recognition of certifications.
+- **Hackathons and competitions**: Sponsor or participate in Saudi AI engineering competitions to identify and recruit talent.
+- **Graduate programs**: Create structured graduate development programs that combine AEEF training tiers with mentorship from experienced AI Champions.
+
+:::tip
+Workforce localization metrics SHOULD be reported as part of the organization's contribution to the [SDAIA National AI Index](../pillar-2-governance-risk/naii-metrics-mapping.md) Human Capabilities dimension.
+:::

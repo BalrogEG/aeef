@@ -43,3 +43,15 @@ This is the production-style runtime used behind Nginx for `aaee.buildstudio.app
 npm run typecheck
 npm run build
 ```
+
+## Open-Source Onboarding
+
+Before starting AI-assisted implementation, follow:
+
+1. `production/standards/apply-ready-rollout-kit.md`
+2. `CONTRIBUTING.md`
+3. `production/tool-guides/open-source-onboarding-expert-network.md`
+
+Experts can apply through the GitHub issue form:
+
+- `.github/ISSUE_TEMPLATE/expert-join.yml`

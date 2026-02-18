@@ -25,6 +25,8 @@ This profile adapts AEEF for public-sector delivery in Middle East jurisdictions
 | GOV-ME-04 | Public-facing services MUST maintain transparency artifacts: purpose, scope, limitations, and escalation channels | Service transparency record, support documentation |
 | GOV-ME-05 | Incident reporting and escalation for government services MUST include regulator-ready evidence bundles | Incident timelines, provenance package, corrective actions |
 | GOV-ME-06 | Critical public services SHOULD maintain service continuity fallback paths independent of external AI providers | DR plans, continuity test results |
+| GOV-ME-07 | Government AI programs MUST include Arabic as the primary language for all citizen-facing transparency artifacts, governance documentation, and training materials. See [KSA Regulatory Profile — Arabic Language Requirements](./ksa-regulatory-profile.md#arabic-language-requirements). | Arabic artifact inventory, translation verification records |
+| GOV-ME-08 | Change management programs for government AI adoption MUST incorporate cultural context guidance addressing hierarchical decision-making, relationship-driven trust, and Vision 2030 alignment. See [Culture & Mindset — Saudi Organizational Context](../pillar-5-organizational-enablement/culture-mindset.md#saudi-organizational-context). | Change management plan with cultural adaptation section, stakeholder engagement records |
 
 ## Government Assurance Package
 
@@ -86,4 +88,9 @@ Use the same profile design for other Middle East jurisdictions:
 - [KSA Regulatory Profile](./ksa-regulatory-profile.md)
 - [ISO 42001 Certification Readiness](./iso-42001-certification-readiness.md)
 - [Compliance & Regulatory Alignment](./compliance-regulatory.md)
+- [SDAIA Ethics Traceability](./sdaia-ethics-traceability.md)
+- [SDAIA Risk Framework Alignment](./sdaia-risk-framework-alignment.md)
+- [SAMA CSF Integration](./sama-csf-integration.md)
+- [NAII Metrics Mapping](./naii-metrics-mapping.md)
+- [Culture & Mindset](../pillar-5-organizational-enablement/culture-mindset.md)
 

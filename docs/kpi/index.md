@@ -121,6 +121,7 @@ The KPI Framework is not static. Organizations SHOULD review and refine their me
 - **Retire metrics** that no longer provide actionable insight
 - **Adjust targets** based on achieved performance — targets SHOULD always be ambitious but achievable
 - **Improve measurement methods** as automation capabilities mature
+- **Align to national frameworks** — organizations operating in Saudi Arabia SHOULD structure KPI reporting to align with SDAIA National AI Index (NAII) dimensions for national-level contribution; see [NAII Metrics Mapping](../pillar-2-governance-risk/naii-metrics-mapping.md)
 
 ## Anti-Patterns to Avoid
 
@@ -139,3 +140,4 @@ The KPI Framework is not static. Organizations SHOULD review and refine their me
 - [Risk Metrics](./risk-metrics.md) — detailed definitions and severity-based targets
 - [Financial Metrics](./financial-metrics.md) — detailed definitions and ROI calculation model
 - [Glossary](../about/glossary.md) — definitions of measurement terms used in this framework
+- [NAII Metrics Mapping](../pillar-2-governance-risk/naii-metrics-mapping.md) — alignment with Saudi Arabia's National AI Index for organizations operating in the Kingdom

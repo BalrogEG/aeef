@@ -2,7 +2,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const siteUrl = process.env.SITE_URL ?? 'https://aaee.buildstudio.app';
+const siteUrl = process.env.SITE_URL ?? 'https://aeef.codemeld.io';
 
 const config: Config = {
   title: 'AEEF Standards',
@@ -102,7 +102,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/aeef-social-card.png',
     colorMode: {
       defaultMode: 'light',
       respectPrefersColorScheme: true,

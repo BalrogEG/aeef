@@ -1,0 +1,119 @@
+name: Expert Network Application
+description: Apply to join the AEEF expert network for standards implementation and governance support.
+title: "[Expert Join] "
+labels:
+  - expert-network
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in joining the AEEF expert network.
+        Please complete all required fields so maintainers can triage your application quickly.
+
+  - type: input
+    id: full_name
+    attributes:
+      label: Full Name
+      placeholder: Jane Doe
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Preferred Contact
+      description: Email or LinkedIn profile URL.
+      placeholder: jane@example.com
+    validations:
+      required: true
+
+  - type: dropdown
+    id: primary_role
+    attributes:
+      label: Primary Role
+      options:
+        - Software Engineer
+        - Engineering Manager
+        - Solution Architect
+        - QA Lead / SDET
+        - Security Engineer
+        - Product Manager
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: domain_expertise
+    attributes:
+      label: Domain Expertise
+      description: Select your primary area of expertise.
+      options:
+        - AI/ML Engineering
+        - Security Engineering
+        - Governance & Compliance
+        - Enterprise Architecture
+        - Regional Expertise (KSA / Middle East)
+        - Training & Education
+        - Research & Academia
+        - Platform / DevOps Engineering
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: standards_focus
+    attributes:
+      label: Standards You Can Support
+      options:
+        - label: PRD-STD-001 Prompt Engineering
+        - label: PRD-STD-002 Code Review
+        - label: PRD-STD-003 Testing Requirements
+        - label: PRD-STD-004 Security Scanning
+        - label: PRD-STD-005 Documentation
+        - label: PRD-STD-006 Technical Debt
+        - label: PRD-STD-007 Quality Gates
+        - label: PRD-STD-008 Dependency Compliance
+        - label: PRD-STD-009 Autonomous & Multi-Agent Governance
+        - label: PRD-STD-010 AI Product Safety & Trust Controls
+        - label: PRD-STD-011 Model & Data Governance
+        - label: PRD-STD-012 Inference Reliability & Cost Controls
+    validations:
+      required: true
+
+  - type: textarea
+    id: expertise
+    attributes:
+      label: Relevant Expertise
+      description: Share concrete experience, sectors, and outcomes.
+      placeholder: "Example: Led rollout of AI quality gates for 120 engineers across fintech and healthcare systems."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: availability
+    attributes:
+      label: Availability
+      options:
+        - 1-2 hours/week
+        - 3-5 hours/week
+        - 6+ hours/week
+    validations:
+      required: true
+
+  - type: textarea
+    id: expectations
+    attributes:
+      label: Collaboration Expectations
+      description: What type of contribution are you looking for (reviews, mentoring, standards authoring, office hours)?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: agreement
+    attributes:
+      label: Confirmation
+      options:
+        - label: I confirm the information above is accurate.
+          required: true
+

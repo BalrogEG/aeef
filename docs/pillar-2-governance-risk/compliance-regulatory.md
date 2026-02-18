@@ -85,6 +85,10 @@ The General Data Protection Regulation (GDPR) is relevant to AI-assisted develop
 Using production personal data as context in cloud-based AI tools without appropriate legal basis, data protection impact assessment, and contractual safeguards is a potential GDPR violation. Organizations MUST ensure that AI tool usage complies with their Data Protection Impact Assessment (DPIA) findings.
 :::
 
+:::tip PDPL Parallel
+Saudi Arabia's PDPL Article 22 imposes similar requirements to GDPR regarding automated decision-making. Organizations serving both jurisdictions should treat PDPL Article 22 and GDPR Article 22 requirements as cumulative. See [KSA Regulatory Profile — PDPL Article 22](./ksa-regulatory-profile.md#pdpl-article-22-automated-decision-making) for Saudi-specific implementation requirements.
+:::
+
 ### GDPR-Specific Developer Requirements
 
 - Developers MUST NOT include real personal data in AI prompts; use synthetic or anonymized data
@@ -114,6 +118,26 @@ The Health Insurance Portability and Accountability Act (HIPAA) applies when AI-
 - AI-generated code in PHI-processing systems MUST undergo DAST testing before production deployment
 - Business Associate Agreements (BAAs) MUST be in place with any AI tool vendor whose tools process code related to PHI systems
 
+## SAMA Cybersecurity Framework Alignment
+
+The Saudi Central Bank (SAMA) Cyber Security Framework is mandatory for all SAMA-regulated financial institutions. AI-assisted engineering within financial-sector organizations in Saudi Arabia must comply with SAMA CSF requirements in addition to core AEEF controls.
+
+### SAMA CSF Summary Mapping
+
+| SAMA CSF Domain | Key AEEF Controls | Primary Evidence |
+|---|---|---|
+| **Cyber Security Leadership & Governance** | Pillar 2 governance roles and policy framework | Governance policy; role matrix; RACI charts |
+| **Risk Management & Compliance** | Security Risk Framework; KSA Regulatory Profile | Risk registers; compliance mapping matrices |
+| **Operations & Technology** | PRD-STD-002, PRD-STD-004, PRD-STD-007, PRD-STD-008 | SAST/SCA results; quality gate evidence; change records |
+| **Third-Party Cyber Security** | AI tool approval process; dependency compliance | Vendor risk assessments; tool approval records |
+| **Cyber Security Resilience** | Incident Response; PRD-STD-012 inference reliability | Incident reports; BCP/DR plans; continuity test results |
+
+For the full control-by-control mapping, SAMA-specific developer requirements, and audit preparation checklist, see [SAMA CSF Integration](./sama-csf-integration.md).
+
+:::warning
+Financial-sector AI engineering requires additional restrictions: customer data MUST NOT be included in AI prompts, transaction-processing code MUST be classified as Tier 3, and provenance metadata MUST be retained for a minimum of 7 years. See [SAMA CSF Integration](./sama-csf-integration.md) for complete requirements.
+:::
+
 ## ISO 42001 and AI Management System Readiness
 
 Organizations pursuing formal AI management system certification SHOULD implement the readiness approach in [ISO 42001 Certification Readiness](./iso-42001-certification-readiness.md). AEEF provides strong control coverage, but certification readiness requires explicit evidence packaging, internal audit cadence, and management review artifacts.
@@ -122,9 +146,13 @@ Organizations pursuing formal AI management system certification SHOULD implemen
 
 For operations in Saudi Arabia or public-sector programs in the Middle East:
 
-1. Apply [KSA Regulatory Profile](./ksa-regulatory-profile.md) for PDPL, NCA, and DGA control alignment.
-2. Apply [Government (Middle East) Profile](./government-middle-east-profile.md) where public-sector obligations require stricter sovereign, procurement, and transparency controls.
-3. Treat regional overlays as additive requirements on top of core AEEF controls.
+1. Apply [KSA Regulatory Profile](./ksa-regulatory-profile.md) for PDPL, NCA, and DGA control alignment, including data sovereignty requirements and Arabic language mandates.
+2. Complete [SDAIA Ethics Traceability](./sdaia-ethics-traceability.md) self-assessment to demonstrate alignment with SDAIA AI Ethics Principles.
+3. Align risk controls to the [SDAIA Risk Framework Alignment](./sdaia-risk-framework-alignment.md) for national AI risk management compliance.
+4. Apply [SAMA CSF Integration](./sama-csf-integration.md) for financial-sector implementations.
+5. Establish [NAII Metrics Mapping](./naii-metrics-mapping.md) reporting for national AI index contribution.
+6. Apply [Government (Middle East) Profile](./government-middle-east-profile.md) where public-sector obligations require stricter sovereign, procurement, and transparency controls.
+7. Treat regional overlays as additive requirements on top of core AEEF controls.
 
 ## Cross-Framework Compliance Summary
 

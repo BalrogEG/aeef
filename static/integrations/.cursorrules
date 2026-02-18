@@ -1,0 +1,69 @@
+# AEEF Standards — Cursor Rules
+# Drop this file into the root of your repository as .cursorrules
+# It enforces the AI-Accelerated Enterprise Engineering Framework (AEEF) during AI-assisted development.
+# Full framework: https://aaee.buildstudio.app
+
+# === CORE PRINCIPLES ===
+# You are the accountable engineer. AI generates suggestions; you decide what ships.
+# Treat every AI output as a first draft — review every line before accepting.
+# Human judgment is non-negotiable. Never auto-accept without review.
+
+# === MANDATORY SECURITY RULES ===
+# NEVER include secrets, API keys, credentials, or tokens in prompts or generated code.
+# NEVER include real personal data (PII), customer data, or production data in prompts.
+# NEVER disable security scanning, linting, or pre-commit hooks.
+# Flag any code that handles authentication, authorization, encryption, or financial transactions for enhanced security review.
+# All generated code must pass SAST and dependency scanning before merge.
+
+# === CODE QUALITY STANDARDS ===
+# Follow existing project architecture and patterns — do not introduce new patterns without approval.
+# Generated functions must not exceed cyclomatic complexity of 15.
+# All generated code must pass existing linting, type-checking, and formatting rules.
+# No hardcoded values, magic numbers, or unexplained constants.
+# Error handling must be present and follow project patterns.
+
+# === TESTING REQUIREMENTS ===
+# All generated code must have corresponding tests with meaningful assertions.
+# Minimum coverage: 80% line coverage, 70% branch coverage.
+# Write tests first when possible — constrain AI output with test requirements.
+# AI-generated tests must test meaningful behavior, not just "assert true".
+
+# === ATTRIBUTION ===
+# Mark AI-assisted commits clearly in commit metadata or PR template.
+# Keep AI-generated changes in atomic, focused commits.
+# Do not mix AI and human changes in a single commit.
+
+# === DATA CLASSIFICATION ===
+# Before including project context in prompts, verify the data classification level:
+# - PUBLIC: may be used freely with approved AI tools
+# - INTERNAL: approved AI tools only
+# - CONFIDENTIAL: self-hosted or on-premises AI tools only
+# - RESTRICTED: must NOT be used in any AI tool prompts
+
+# === PROMPT ENGINEERING ===
+# Structure prompts with: Role, Context, Task, Constraints, Output Format.
+# Include relevant type definitions and interfaces for context.
+# Specify target framework, language version, and key dependencies.
+# Reference existing patterns in the codebase for the AI to follow.
+
+# === WHEN TO USE AI ===
+# Good for: boilerplate, scaffolding, test generation, documentation, pattern application, refactoring.
+# Code manually: complex business logic, security-critical code, performance-critical paths, novel algorithms.
+
+# === REVIEW CHECKLIST ===
+# Before accepting generated code, verify:
+# - You have read and understand every line
+# - Code follows existing project patterns
+# - No security vulnerabilities (injection, XSS, SSRF, etc.)
+# - Tests exist and test meaningful behavior
+# - No sensitive data in the code
+# - Performance is acceptable
+# - Code is maintainable by teammates
+
+# === PROJECT-SPECIFIC RULES ===
+# Add your project-specific rules below:
+#
+# Example:
+# - Use React Server Components by default
+# - All API endpoints must use Zod for input validation
+# - Database queries must use the repository pattern

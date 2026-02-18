@@ -118,6 +118,11 @@ The AEEF Maturity Model is designed to integrate with existing organizational fr
 | **OWASP SAMM** | AEEF security dimensions extend SAMM to cover AI-specific threat vectors |
 | **ISO 27001** | AEEF governance requirements support ISO 27001 compliance for AI tool usage |
 | **Agile Maturity** | AEEF is agnostic to delivery methodology; it overlays on Agile, Waterfall, or hybrid approaches |
+| **SDAIA AI Adoption Framework** | AEEF five-level model maps to SDAIA four-level model (Emerging, Developed, Proficient, Advanced); see [KSA Regulatory Profile — SDAIA Maturity Model Crosswalk](../pillar-2-governance-risk/ksa-regulatory-profile.md#sdaia-maturity-model-crosswalk) for the detailed mapping |
+
+:::tip Saudi Arabia Organizations
+Organizations operating in Saudi Arabia SHOULD reference the SDAIA maturity crosswalk in the [KSA Regulatory Profile](../pillar-2-governance-risk/ksa-regulatory-profile.md#sdaia-maturity-model-crosswalk) to align AEEF assessments with SDAIA's AI Adoption Framework levels for national reporting purposes.
+:::
 
 ## Next Steps
 

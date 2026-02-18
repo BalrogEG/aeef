@@ -67,6 +67,18 @@ Security scanning is a mandatory requirement per [PRD-STD-004](/production/stand
 - AI-specific security configurations that target the unique vulnerability patterns of AI-generated code
 - False positive management strategies
 
+### 5. Open-Source Onboarding & Expert Network
+
+**[Open-Source Onboarding & Expert Network](/production/tool-guides/open-source-onboarding-expert-network/)**
+
+For teams publishing AEEF as an open-source framework, adoption quality depends on contributor onboarding before coding starts. This guide covers:
+
+- GitHub-first onboarding flow before AI-assisted implementation
+- "Before-you-vibecode" readiness checklist tied to PRD-STD controls
+- GitHub-native expert join form for domain specialists
+- Intake workflow and SLA model for reviewing expert applications
+- KPIs for measuring onboarding and community effectiveness
+
 ## Tool Selection Criteria
 
 When selecting AI development tools, evaluate against these criteria:
@@ -99,5 +111,6 @@ For teams new to AI development tools:
 3. **Set up security scanning** -- This is a Level 1 (Foundation) requirement and should be configured immediately
 4. **Add AI code review** -- Augment your human review process with AI review tools
 5. **Configure test generation** -- Use AI testing tools to help meet coverage requirements in [PRD-STD-003](/production/standards/PRD-STD-003-testing-requirements/)
+6. **Enable community onboarding** -- Publish the open-source onboarding and expert intake workflow to scale contributor quality
 
 For each tool category, the guides provide specific tool recommendations, configuration templates, and integration instructions. Start with the guide most relevant to your immediate needs and expand from there.
