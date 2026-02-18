@@ -44,6 +44,22 @@ npm run typecheck
 npm run build
 ```
 
+## Feedback Popup Setup
+
+A floating feedback popup is enabled on all pages.
+
+Configure one of these before building/deploying:
+
+- `FEEDBACK_ENDPOINT`: webhook URL that accepts `POST` JSON.
+- `FEEDBACK_EMAIL`: fallback `mailto:` recipient.
+
+Example:
+
+```bash
+FEEDBACK_ENDPOINT="https://your-webhook-url"
+npm run build
+```
+
 ## Open-Source Onboarding
 
 Before starting AI-assisted implementation, follow:

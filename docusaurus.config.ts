@@ -2,7 +2,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-const siteUrl = process.env.SITE_URL ?? 'https://aeef.codemeld.io';
+const siteUrl = process.env.SITE_URL ?? 'https://aeef.ai';
+const feedbackEndpoint = process.env.FEEDBACK_ENDPOINT ?? '';
+const feedbackEmail = process.env.FEEDBACK_EMAIL ?? '';
 
 const config: Config = {
   title: 'AEEF Standards',
@@ -15,6 +17,10 @@ const config: Config = {
 
   url: siteUrl,
   baseUrl: '/',
+  customFields: {
+    feedbackEndpoint,
+    feedbackEmail,
+  },
 
   onBrokenLinks: 'throw',
 
@@ -24,6 +30,63 @@ const config: Config = {
       onBrokenMarkdownLinks: 'warn',
     },
   },
+
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'keywords',
+        content: 'AI engineering standards, AI-accelerated development, AI governance framework, AI code quality, enterprise AI standards, AI software engineering, AEEF, AI pair programming, AI security scanning, AI maturity model',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'author',
+        content: 'AEEF Standards',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'canonical',
+        href: 'https://aeef.ai',
+      },
+    },
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'AEEF Standards',
+        url: 'https://aeef.ai',
+        logo: 'https://aeef.ai/img/logo.svg',
+        description: 'The AI-Accelerated Enterprise Engineering Framework (AEEF) provides governance-embedded, measurable enterprise standards for AI-assisted software engineering.',
+        sameAs: [],
+      }),
+    },
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'AEEF Standards',
+        url: 'https://aeef.ai',
+        description: 'Enterprise Standards for AI-Accelerated Engineering. Governance-embedded, measurable, and transformation-ready.',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: 'https://aeef.ai/search?q={search_term_string}',
+          'query-input': 'required name=search_term_string',
+        },
+      }),
+    },
+  ],
 
   i18n: {
     defaultLocale: 'en',
@@ -103,6 +166,13 @@ const config: Config = {
 
   themeConfig: {
     image: 'img/aeef-social-card.png',
+    metadata: [
+      {name: 'description', content: 'AEEF Standards provides governance-embedded, measurable enterprise standards for AI-assisted software engineering. Five pillars, maturity model, role-based guides, and production standards.'},
+      {name: 'og:type', content: 'website'},
+      {name: 'og:site_name', content: 'AEEF Standards'},
+      {name: 'twitter:site', content: '@aeef_ai'},
+      {name: 'robots', content: 'index, follow'},
+    ],
     colorMode: {
       defaultMode: 'light',
       respectPrefersColorScheme: true,

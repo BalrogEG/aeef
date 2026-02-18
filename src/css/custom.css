@@ -399,3 +399,119 @@ table th {
   .grid-4 { grid-template-columns: 1fr; }
   .grid-5 { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Feedback popup */
+.feedback-modal-open {
+  overflow: hidden;
+}
+
+.feedback-floating-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 999;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #1a365d, #2b6cb0);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.7rem 1.15rem;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(11, 31, 56, 0.35);
+}
+
+.feedback-floating-button:hover {
+  transform: translateY(-1px);
+}
+
+.feedback-floating-button:focus-visible {
+  outline: 2px solid #2b6cb0;
+  outline-offset: 3px;
+}
+
+.feedback-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.feedback-modal {
+  width: min(560px, 100%);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 24px 60px rgba(10, 18, 31, 0.3);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  overflow: hidden;
+}
+
+.feedback-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.feedback-modal-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.feedback-close-button {
+  border: 0;
+  background: transparent;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.feedback-form {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1rem;
+}
+
+.feedback-form label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.feedback-form textarea,
+.feedback-form input {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  padding: 0.65rem 0.75rem;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+}
+
+.feedback-actions {
+  margin-top: 0.25rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.feedback-status {
+  margin: 0;
+  font-size: 0.88rem;
+}
+
+.feedback-status--success {
+  color: #1b8f57;
+}
+
+.feedback-status--error {
+  color: #c53030;
+}
