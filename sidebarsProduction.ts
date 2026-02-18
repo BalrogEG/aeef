@@ -9,6 +9,17 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Tutorials & Quick Start',
+      link: {type: 'doc', id: 'tutorials/index'},
+      items: [
+        'tutorials/starter-configs',
+        'tutorials/ci-cd-pipeline-starter',
+        'tutorials/first-ai-pr-tutorial',
+        'tutorials/policy-templates',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Standards & Guidelines',
       link: {type: 'doc', id: 'standards/index'},
       items: [
@@ -44,6 +55,7 @@ const sidebars: SidebarsConfig = {
       link: {type: 'doc', id: 'tool-guides/index'},
       items: [
         'tool-guides/ide-integration',
+        'tool-guides/free-tier-comparison',
         'tool-guides/ai-code-review',
         'tool-guides/automated-testing-ai',
         'tool-guides/security-scanning-tools',

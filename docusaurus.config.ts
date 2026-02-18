@@ -122,6 +122,11 @@ const config: Config = {
       },
       items: [
         {
+          to: '/pillars/startup-quick-start',
+          label: 'Quick-Start',
+          position: 'left',
+        },
+        {
           to: '/transformation/',
           label: 'Transformation',
           position: 'left',
@@ -162,6 +167,15 @@ const config: Config = {
       style: 'dark',
       links: [
         {
+          title: 'Get Started',
+          items: [
+            {label: 'Startup Quick-Start', to: '/pillars/startup-quick-start'},
+            {label: 'Tutorials', to: '/production/tutorials/'},
+            {label: 'Self-Assessment', to: '/pillars/startup-self-assessment'},
+            {label: 'FAQ', to: '/pillars/faq'},
+          ],
+        },
+        {
           title: 'Standards',
           items: [
             {label: 'Transformation Track', to: '/transformation/'},
@@ -178,11 +192,12 @@ const config: Config = {
           ],
         },
         {
-          title: 'About',
+          title: 'Resources',
           items: [
-            {label: 'About AEEF', to: '/pillars/about/'},
+            {label: 'Case Studies', to: '/pillars/about/case-studies'},
+            {label: 'External Resources', to: '/pillars/about/external-resources'},
             {label: 'Glossary', to: '/pillars/about/glossary'},
-            {label: 'Standards Updates', to: '/updates'},
+            {label: 'Updates', to: '/updates'},
           ],
         },
       ],

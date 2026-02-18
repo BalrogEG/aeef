@@ -12,8 +12,11 @@ function HeroSection(): ReactNode {
           Governance-embedded, measurable, and transformation-ready.
         </p>
         <div className="hero-buttons">
-          <Link className="primary-btn" to="/transformation/">
-            Start Transformation
+          <Link className="primary-btn" to="/pillars/startup-quick-start">
+            Startup Quick-Start
+          </Link>
+          <Link className="secondary-btn" to="/transformation/">
+            Transformation Track
           </Link>
           <Link className="secondary-btn" to="/production/">
             Production Standards
@@ -55,11 +58,27 @@ function TracksSection(): ReactNode {
   return (
     <div className="section-alt">
       <div className="container">
-        <h2>Two Tracks, One Framework</h2>
+        <h2>Three Entry Points, One Framework</h2>
         <p className="section-subtitle">
           Choose your entry point based on where your organization is today.
         </p>
-        <div className="grid-2">
+        <div className="grid-3">
+          <div className="track-card">
+            <h2>Quick-Start</h2>
+            <p style={{color: 'var(--ifm-color-emphasis-700)', marginBottom: '1rem'}}>
+              For startups and small teams who want to start today.
+              No enterprise budget or committee required.
+            </p>
+            <ul style={{color: 'var(--ifm-color-emphasis-600)', fontSize: '0.9rem'}}>
+              <li>Day-1 checklists by team size</li>
+              <li>Copy-paste config files and CI pipelines</li>
+              <li>End-to-end tutorial with real code</li>
+              <li>Free-tier tool guidance</li>
+            </ul>
+            <Link className="button button--primary button--lg" to="/pillars/startup-quick-start">
+              Start Now
+            </Link>
+          </div>
           <div className="track-card">
             <h2>Transformation</h2>
             <p style={{color: 'var(--ifm-color-emphasis-700)', marginBottom: '1rem'}}>
@@ -67,7 +86,7 @@ function TracksSection(): ReactNode {
               A phased journey from foundation to enterprise scale.
             </p>
             <ul style={{color: 'var(--ifm-color-emphasis-600)', fontSize: '0.9rem'}}>
-              <li>3-phase adoption roadmap (0-18 months)</li>
+              <li>3-phase adoption roadmap (0-6 months)</li>
               <li>Operating model lifecycle integration</li>
               <li>Governance gate implementation</li>
               <li>Maturity assessment framework</li>

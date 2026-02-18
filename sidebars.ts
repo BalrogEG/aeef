@@ -4,6 +4,21 @@ const sidebars: SidebarsConfig = {
   pillarsSidebar: [
     {
       type: 'doc',
+      id: 'startup-quick-start',
+      label: 'Startup Quick-Start',
+    },
+    {
+      type: 'doc',
+      id: 'startup-self-assessment',
+      label: 'Self-Assessment Guide',
+    },
+    {
+      type: 'doc',
+      id: 'faq',
+      label: 'FAQ & Troubleshooting',
+    },
+    {
+      type: 'doc',
       id: 'index',
       label: 'Five Pillars Overview',
     },
@@ -101,6 +116,8 @@ const sidebars: SidebarsConfig = {
       link: {type: 'doc', id: 'about/index'},
       items: [
         'about/research-evidence',
+        'about/external-resources',
+        'about/case-studies',
         'about/contributing',
         'about/glossary',
         'about/version-history',
