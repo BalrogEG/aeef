@@ -221,7 +221,7 @@ AI-assisted engineering represents a strategic skill domain for Saudi workforce 
 
 | Metric | Definition | Target | Measurement Method |
 |---|---|---|---|
-| Saudi national AI certification rate | Percentage of Saudi national engineers achieving AEEF Practitioner level or above | >= 80% of Saudi engineering staff within 18 months | Certification records cross-referenced with HR nationality data |
+| Saudi national AI certification rate | Percentage of Saudi national engineers achieving AEEF Practitioner level or above | >= 80% of Saudi engineering staff within 6 months | Certification records cross-referenced with HR nationality data |
 | Saudi AI Champion ratio | Percentage of AI Champions who are Saudi nationals | Proportional to workforce Saudization ratio, minimum 50% | Champion registry with nationality tracking |
 | Saudi training completion rate | Saudi nationals completing Tier 2 or above training | >= 95% within 12 months of program launch | LMS completion records |
 | Saudi leadership pipeline | Saudi nationals in AI CoE leadership or senior AI engineering roles | Increasing annually; target >= 60% of CoE leadership within 3 years | Organizational chart; role assignment records |

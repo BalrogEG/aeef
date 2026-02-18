@@ -8,7 +8,7 @@ description: "Structured roadmap for organizations adopting AI-assisted engineer
 
 The Transformation Track provides a structured, phased roadmap for organizations adopting AI-assisted engineering under the AI-Accelerated Enterprise Engineering Framework (AEEF). With 92% of US developers now using AI tools daily and research showing AI co-authored code carries 1.7x more issues and a 2.74x higher vulnerability rate, organizations cannot afford an ad hoc approach to AI adoption. This track delivers the discipline, governance, and measurement infrastructure required to capture AI's productivity gains while managing its risks. Source confidence for these benchmark claims is tracked in [Research Evidence & Assumption Register](/pillars/about/research-evidence/).
 
-The transformation spans **18 months** across three distinct phases, supported by a continuous [Operating Model Lifecycle](/transformation/operating-model/) that governs how AI-assisted work flows from business intent through production deployment.
+The transformation spans **6 months** across three distinct phases, supported by a continuous [Operating Model Lifecycle](/transformation/operating-model/) that governs how AI-assisted work flows from business intent through production deployment. AI tooling evolves at machine speed — adoption programs must match that pace.
 
 For organizations building AI-powered product capabilities, this track is complemented by the [AI Product Lifecycle](/transformation/ai-product-lifecycle/), which covers model evaluation gates, production monitoring, drift response, and model incident handling.
 
@@ -36,15 +36,15 @@ Before initiating the Transformation Track, organizations MUST have:
 
 ## The Three Phases
 
-### Phase 1: Foundation (Months 0-3)
+### Phase 1: Foundation (Weeks 1-4)
 
-[Phase 1](/transformation/phase-1-foundation/) establishes the groundwork. Teams assess and select AI tools, define baseline security policies, train developers, identify pilot projects, and establish measurement baselines. The goal is controlled, observable adoption within a small, well-supported cohort.
+[Phase 1](/transformation/phase-1-foundation/) establishes the groundwork. Teams assess and select AI tools, define baseline security policies, train developers, identify pilot projects, and establish measurement baselines. The goal is controlled, observable adoption within a small, well-supported cohort. AI tools are ready out of the box — there is no reason this should take longer than a month.
 
-### Phase 2: Structured Expansion (Months 3-9)
+### Phase 2: Structured Expansion (Months 1-3)
 
 [Phase 2](/transformation/phase-2-expansion/) scales adoption beyond pilot teams with formal governance frameworks, CI/CD pipeline integration, cross-team knowledge sharing, expanded metrics, and structured risk assessment. The goal is repeatable, governed adoption across multiple teams.
 
-### Phase 3: Enterprise Scale (Months 9-18)
+### Phase 3: Enterprise Scale (Months 3-6)
 
 [Phase 3](/transformation/phase-3-enterprise-scale/) achieves organization-wide AI-assisted engineering with enterprise policies, advanced prompt engineering standards, AI-first workflows, continuous improvement loops, and maturity certification. The goal is institutionalized, self-improving AI-assisted engineering.
 
@@ -52,7 +52,7 @@ Before initiating the Transformation Track, organizations MUST have:
 
 | Aspect | Phase 1: Foundation | Phase 2: Structured Expansion | Phase 3: Enterprise Scale |
 |---|---|---|---|
-| **Timeline** | Months 0-3 | Months 3-9 | Months 9-18 |
+| **Timeline** | Weeks 1-4 | Months 1-3 | Months 3-6 |
 | **Scope** | 1-2 pilot teams | 5-10 teams across departments | All engineering teams |
 | **Governance** | Baseline security policies | Formal governance framework | Organization-wide policy |
 | **Tooling** | Tool assessment and selection | CI/CD pipeline integration | AI-first workflow automation |
@@ -63,7 +63,7 @@ Before initiating the Transformation Track, organizations MUST have:
 
 ## Expected Outcomes
 
-Organizations that complete the full 18-month transformation SHOULD expect:
+Organizations that complete the full 6-month transformation SHOULD expect:
 
 - **30-50% improvement in developer velocity** on tasks amenable to AI assistance, measured against Phase 1 baselines
 - **No increase in vulnerability density** compared to pre-adoption baselines, achieved through security-first governance

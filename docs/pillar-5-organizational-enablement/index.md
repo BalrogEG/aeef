@@ -112,13 +112,13 @@ Pillar 5 components SHOULD be implemented in this sequence:
 2. **Launch AI Literacy Program** -- Broad awareness before deep training
 3. **Begin Culture Assessment** -- Understand the starting cultural position before attempting to change it
 
-### Phase 2: Build (Month 2-4)
+### Phase 2: Build (Month 1-3)
 
 4. **Deploy Training Programs** -- Start with fundamentals, expand to role-specific curricula
 5. **Activate AI Champions** -- Select, train, and empower champions in each team
 6. **Conduct Initial Maturity Assessment** -- Establish the baseline against which progress will be measured
 
-### Phase 3: Scale (Month 4-8)
+### Phase 3: Scale (Month 3-6)
 
 7. **Expand Training to Advanced Topics** -- Move beyond fundamentals to specialized skills
 8. **Implement Cultural Reinforcement** -- Leadership behaviors, recognition programs, experimentation norms

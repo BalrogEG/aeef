@@ -38,10 +38,10 @@ This guide is written for developers across a range of experience levels. Each s
 
 | Level | Experience | What to Focus On |
 |-------|-----------|-----------------|
-| **Beginner** | 0-3 months with AI tools | Daily Workflows, basic Prompt Engineering, Security Awareness fundamentals |
-| **Intermediate** | 3-12 months with AI tools | Advanced Prompt Engineering, full Code Review Responsibilities, Skill Development planning |
-| **Advanced** | 1-2 years with AI tools | All sections at depth, mentoring others, contributing to organizational prompt libraries |
-| **Expert** | 2+ years, cross-tool proficiency | Defining team standards, evaluating new tools, driving continuous improvement |
+| **Beginner** | 0-1 months with AI tools | Daily Workflows, basic Prompt Engineering, Security Awareness fundamentals |
+| **Intermediate** | 1-3 months with AI tools | Advanced Prompt Engineering, full Code Review Responsibilities, Skill Development planning |
+| **Advanced** | 3-6 months with AI tools | All sections at depth, mentoring others, contributing to organizational prompt libraries |
+| **Expert** | 6+ months, cross-tool proficiency | Defining team standards, evaluating new tools, driving continuous improvement |
 
 See the [Skill Development](/roles/developer/skill-development) section for the full competency matrix and certification path.
 

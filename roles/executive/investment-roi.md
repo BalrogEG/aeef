@@ -116,13 +116,13 @@ Value does not materialize immediately. AI-assisted development follows a predic
 
 | Timeframe | Cumulative Investment | Cumulative Value | Net Position | Breakeven Status |
 |-----------|----------------------|------------------|-------------|-----------------|
-| Month 3 | $400,000 - $700,000 | $50,000 - $200,000 | -$350,000 to -$500,000 | Pre-breakeven |
-| Month 6 | $500,000 - $950,000 | $300,000 - $800,000 | -$200,000 to -$150,000 | Approaching breakeven |
-| Month 9 | $600,000 - $1,200,000 | $800,000 - $1,800,000 | +$200,000 to +$600,000 | **Breakeven achieved** |
-| Month 12 | $700,000 - $1,500,000 | $1,500,000 - $3,500,000 | +$800,000 to +$2,000,000 | Positive |
-| Year 2 | $1,100,000 - $2,600,000 | $4,500,000 - $9,000,000 | +$3,400,000 to +$6,400,000 | Strong positive |
+| Month 1 | $200,000 - $400,000 | $25,000 - $100,000 | -$175,000 to -$300,000 | Pre-breakeven |
+| Month 3 | $400,000 - $750,000 | $200,000 - $600,000 | -$200,000 to -$150,000 | Approaching breakeven |
+| Month 6 | $550,000 - $1,000,000 | $700,000 - $1,500,000 | +$150,000 to +$500,000 | **Breakeven achieved** |
+| Month 9 | $650,000 - $1,200,000 | $1,300,000 - $3,000,000 | +$650,000 to +$1,800,000 | Positive |
+| Year 1 | $800,000 - $1,500,000 | $2,500,000 - $5,500,000 | +$1,700,000 to +$4,000,000 | Strong positive |
 
-**Typical breakeven:** 6-9 months after initial investment.
+**Typical breakeven:** 3-6 months after initial investment.
 
 ## Investment Phases and Decision Points
 
@@ -134,19 +134,19 @@ Structure the investment as a phased commitment with clear decision points:
 **Decision criteria for advancing:** Pilot teams show measurable productivity improvement without quality degradation
 **Who decides:** VP Engineering / CTO
 
-### Gate 2: Broad Deployment Authorization (Month 3)
+### Gate 2: Broad Deployment Authorization (Month 1)
 
 **Investment ask:** Remaining one-time costs + annual licensing commitment
 **Decision criteria for advancing:** Pilot results confirmed, governance framework operational, team health indicators positive
 **Who decides:** Executive Committee / CFO
 
-### Gate 3: Optimization Authorization (Month 9)
+### Gate 3: Optimization Authorization (Month 3)
 
 **Investment ask:** Year 2 recurring costs + optimization investments (advanced tooling, expanded training)
 **Decision criteria for advancing:** ROI measurably positive, quality metrics stable, board reporting operational
 **Who decides:** Executive Committee / CFO
 
-### Gate 4: Annual Renewal (Month 12+)
+### Gate 4: Annual Renewal (Month 6+)
 
 **Investment ask:** Ongoing annual recurring costs
 **Decision criteria for advancing:** Continued positive ROI, team satisfaction above threshold, competitive position maintained

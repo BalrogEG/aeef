@@ -6,7 +6,7 @@ description: "Programs for sharing AI-assisted development learnings across team
 
 # Cross-Team Knowledge Sharing
 
-This section covers structured knowledge sharing programs that accelerate AI-assisted development adoption across the organization. When pilot teams learn effective practices in isolation, the organization scales linearly. When those learnings are systematically shared, adoption scales exponentially. Knowledge sharing programs include communities of practice, internal showcases, shared prompt libraries, lessons-learned repositories, and mentoring programs. These programs MUST be operational by Month 5 of [Phase 2](/transformation/phase-2-expansion/) and continue through [Phase 3](/transformation/phase-3-enterprise-scale/) and beyond.
+This section covers structured knowledge sharing programs that accelerate AI-assisted development adoption across the organization. When pilot teams learn effective practices in isolation, the organization scales linearly. When those learnings are systematically shared, adoption scales exponentially. Knowledge sharing programs include communities of practice, internal showcases, shared prompt libraries, lessons-learned repositories, and mentoring programs. These programs MUST be operational by Week 7 of [Phase 2](/transformation/phase-2-expansion/) and continue through [Phase 3](/transformation/phase-3-enterprise-scale/) and beyond.
 
 ## Communities of Practice
 

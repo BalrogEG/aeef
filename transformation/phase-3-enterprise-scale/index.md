@@ -1,10 +1,10 @@
 ---
-title: "Phase 3: Enterprise Scale (9-18 Months)"
+title: "Phase 3: Enterprise Scale (Months 3-6)"
 sidebar_position: 1
 description: "Achieving enterprise-wide AI-assisted engineering."
 ---
 
-# Phase 3: Enterprise Scale (9-18 Months)
+# Phase 3: Enterprise Scale (Months 3-6)
 
 Phase 3 achieves enterprise-wide AI-assisted engineering with organization-wide policies, advanced prompt engineering standards, AI-first development workflows, continuous improvement loops, and maturity certification. Where [Phase 1](/transformation/phase-1-foundation/) proved the concept and [Phase 2](/transformation/phase-2-expansion/) built scalable governance, Phase 3 makes AI-assisted engineering the default way of working across the entire organization. By the end of this phase, AI assistance is not a special initiative — it is an embedded, governed, continuously improving organizational capability.
 
@@ -28,7 +28,7 @@ Phase 3 MUST NOT begin until the following Phase 2 prerequisites are verified:
 - [ ] Governance framework operational and enforced for all expansion teams (minimum 5 teams)
 - [ ] CI/CD pipelines include automated AI governance checks for all active teams
 - [ ] Community of Practice meeting regularly with documented participation from all teams
-- [ ] Organizational KPI dashboard operational with at least 3 months of trend data
+- [ ] Organizational KPI dashboard operational with at least 4 weeks of trend data
 - [ ] Risk assessment process operational with automated scoring
 - [ ] No unresolved Critical severity security incidents
 - [ ] Aggregate defect density not increased more than 5% relative to baselines
@@ -74,18 +74,14 @@ Phase 3 evolves the team structure to reflect institutionalization:
 
 ## Timeline
 
-| Month | Key Activities |
+| Period | Key Activities |
 |---|---|
-| **Month 9** | Launch Phase 3; begin organization-wide policy drafting; identify remaining non-adopted teams |
-| **Month 10** | Draft advanced prompt engineering standards; begin AI-first workflow design; continue team onboarding |
-| **Month 11** | Organization-wide policy in review cycle; pilot AI-first workflows with 2-3 teams |
-| **Month 12** | Publish organization-wide policy; launch continuous improvement processes; mid-phase review |
-| **Month 13** | All engineering teams under governance; advanced prompt training rollout |
-| **Month 14** | AI-first workflows deployed to all teams; A/B testing of process variants begins |
-| **Month 15** | Maturity assessment methodology finalized; pilot assessment conducted |
-| **Month 16** | Full maturity assessment across all teams; continuous improvement processes validated |
-| **Month 17** | Certification results compiled; remediation for teams below target maturity |
-| **Month 18** | Transformation Completion Report; transition to steady-state operations; certification awarded |
+| **Week 14** | Launch Phase 3; begin organization-wide policy drafting; identify remaining non-adopted teams; draft advanced prompt engineering standards |
+| **Weeks 15-16** | AI-first workflow design; organization-wide policy in review cycle; pilot AI-first workflows with 2-3 teams; continue team onboarding |
+| **Weeks 17-18** | Publish organization-wide policy; all engineering teams under governance; advanced prompt training rollout; launch continuous improvement processes; mid-phase review |
+| **Weeks 19-20** | AI-first workflows deployed to all teams; A/B testing of process variants; maturity assessment methodology finalized; pilot assessment conducted |
+| **Weeks 21-22** | Full maturity assessment across all teams; continuous improvement processes validated; certification results compiled; remediation for teams below target |
+| **Weeks 23-24** | Re-assessment for remediated teams; Transformation Completion Report; transition to steady-state operations; certification awarded |
 
 ## Success Criteria
 

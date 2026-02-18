@@ -130,10 +130,10 @@ Where available, organizations SHOULD compare their maturity scores to industry 
 | Maturity Level | Typical Organization Profile |
 |---------------|---------------------------|
 | Level 1 | Organizations that have not yet formally addressed AI-assisted development |
-| Level 2 | Organizations in early adoption, typically within first 6 months |
-| Level 3 | Organizations with 6-18 months of structured AI-assisted development |
-| Level 4 | Organizations with 18+ months and strong CoE support |
-| Level 5 | Industry leaders with 2+ years of mature, measured AI-assisted development |
+| Level 2 | Organizations in early adoption, typically within first 2 months |
+| Level 3 | Organizations with 2-6 months of structured AI-assisted development |
+| Level 4 | Organizations with 6+ months and strong CoE support |
+| Level 5 | Industry leaders with 12+ months of mature, measured AI-assisted development |
 
 :::tip
 Do not compare your maturity score to vendor marketing claims or conference keynote aspirations. Compare to peer organizations with similar industry, regulatory, and technical complexity. The [Center of Excellence](./center-of-excellence.md) SHOULD maintain benchmarking relationships with peer organizations.

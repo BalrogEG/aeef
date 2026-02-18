@@ -156,7 +156,7 @@ The steering committee provides strategic oversight and cross-functional alignme
 
 **Deliverables**: Charter, initial tool list, baseline maturity assessment, Tier 1 training
 
-### Phase 2: Build (Month 3-6)
+### Phase 2: Build (Month 1-3)
 
 **Objective**: Establish core capabilities and begin delivering value to teams.
 
@@ -170,20 +170,20 @@ The steering committee provides strategic oversight and cross-functional alignme
 
 **Deliverables**: Published standards (v1), prompt repository, trained Champions, metrics baseline
 
-### Phase 3: Scale (Month 6-12)
+### Phase 3: Scale (Month 3-6)
 
 **Objective**: Extend CoE impact across the full organization.
 
 - Expand Champion network to all teams
 - Mature training to include Tier 3 and Tier 4 curricula
-- Refine standards based on 6 months of feedback and data
-- Publish first quarterly metrics and ROI report
+- Refine standards based on initial feedback and data
+- Publish first metrics and ROI report
 - Conduct second maturity assessment and demonstrate progress
 - Begin cross-team knowledge sharing and benchmarking
 
 **Deliverables**: Full Champion coverage, comprehensive training, refined standards, ROI report
 
-### Phase 4: Optimize (Month 12+)
+### Phase 4: Optimize (Month 6+)
 
 **Objective**: Drive continuous improvement and strategic evolution.
 

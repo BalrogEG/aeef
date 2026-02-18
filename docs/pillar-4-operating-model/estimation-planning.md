@@ -215,4 +215,4 @@ As organizations gain experience, their estimation approaches SHOULD mature:
 | **Advanced** | Predictive models using historical AI task data | +/- 10-15% |
 | **Expert** | ML-assisted estimation with continuous calibration | +/- 5-10% |
 
-Organizations SHOULD target the "Proficient" stage within 6-9 months of AI adoption and "Advanced" within 12-18 months. The progression is driven by data collection, analysis, and the [feedback loops](../pillar-3-productivity/feedback-loop-design.md) defined in Pillar 3.
+Organizations SHOULD target the "Proficient" stage within 2-3 months of AI adoption and "Advanced" within 4-6 months. The progression is driven by data collection, analysis, and the [feedback loops](../pillar-3-productivity/feedback-loop-design.md) defined in Pillar 3.

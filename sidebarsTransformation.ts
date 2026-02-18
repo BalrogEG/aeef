@@ -9,7 +9,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Phase 1: Foundation (0-3 months)',
+      label: 'Phase 1: Foundation (Weeks 1-4)',
       link: {type: 'doc', id: 'phase-1-foundation/index'},
       items: [
         'phase-1-foundation/ai-tool-assessment',
@@ -21,7 +21,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Phase 2: Structured Expansion (3-9 months)',
+      label: 'Phase 2: Structured Expansion (Months 1-3)',
       link: {type: 'doc', id: 'phase-2-expansion/index'},
       items: [
         'phase-2-expansion/governance-implementation',
@@ -33,7 +33,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: 'Phase 3: Enterprise Scale (9-18 months)',
+      label: 'Phase 3: Enterprise Scale (Months 3-6)',
       link: {type: 'doc', id: 'phase-3-enterprise-scale/index'},
       items: [
         'phase-3-enterprise-scale/organization-wide-policy',

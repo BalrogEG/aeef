@@ -1,12 +1,12 @@
 ---
-title: "Phase 1: Foundation (0-3 Months)"
+title: "Phase 1: Foundation (Weeks 1-4)"
 sidebar_position: 1
 description: "Establishing the groundwork for AI-assisted development adoption."
 ---
 
-# Phase 1: Foundation (0-3 Months)
+# Phase 1: Foundation (Weeks 1-4)
 
-Phase 1 establishes the groundwork for AI-assisted development within your organization. Over the first three months, teams assess and select appropriate AI tools, define baseline security policies, onboard developers through structured training, identify pilot projects, and establish measurement baselines. This phase is deliberately constrained in scope — success here is measured not by breadth of adoption but by the quality of foundations laid for [Phase 2: Structured Expansion](/transformation/phase-2-expansion/).
+Phase 1 establishes the groundwork for AI-assisted development within your organization. Over the first four weeks, teams assess and select appropriate AI tools, define baseline security policies, onboard developers through structured training, identify pilot projects, and establish measurement baselines. Modern AI tools are ready out of the box — procurement and configuration should not drag this phase beyond one month. This phase is deliberately constrained in scope — success here is measured not by breadth of adoption but by the quality of foundations laid for [Phase 2: Structured Expansion](/transformation/phase-2-expansion/).
 
 ## Goals
 
@@ -80,12 +80,10 @@ Phase 1 is considered successful when ALL of the following criteria are met:
 
 | Week | Activities |
 |---|---|
-| **Weeks 1-2** | Kick off Phase 1; form core team; begin tool assessment; initiate security policy drafting |
-| **Weeks 3-4** | Complete tool evaluation; shortlist tools; begin procurement; draft acceptable use policy |
-| **Weeks 5-6** | Finalize tool selection; configure approved tools; complete security policies; begin training curriculum development |
-| **Weeks 7-8** | Deploy tools to pilot teams; deliver training modules 1-4; select pilot projects |
-| **Weeks 9-10** | Deliver training modules 5-8; launch pilot projects; begin baseline measurement |
-| **Weeks 11-12** | Monitor pilots; collect baseline data; compile Phase 1 Completion Report; conduct go/no-go review |
+| **Week 1** | Kick off Phase 1; form core team; begin tool assessment; initiate security policy drafting; draft acceptable use policy |
+| **Week 2** | Finalize tool selection and procurement; configure approved tools; complete security policies; begin training delivery |
+| **Week 3** | Deploy tools to pilot teams; complete training; select and launch pilot projects; begin baseline measurement |
+| **Week 4** | Monitor pilots; collect baseline data; compile Phase 1 Completion Report; conduct go/no-go review |
 
 ## Risks and Mitigations
 
@@ -105,6 +103,6 @@ At the end of Phase 1, the Steering Committee MUST conduct a formal go/no-go rev
 
 **Conditional go** MAY be granted if no more than one mandatory criterion is partially met, with a documented remediation plan and timeline.
 
-**No-go** requires a remediation plan and a re-assessment date no more than 4 weeks later.
+**No-go** requires a remediation plan and a re-assessment date no more than 2 weeks later.
 
-Phase 1 is the most critical phase of the transformation. Cutting corners here leads to compounding problems in [Phase 2](/transformation/phase-2-expansion/) and [Phase 3](/transformation/phase-3-enterprise-scale/). Invest the time to build solid foundations.
+Phase 1 is the most critical phase of the transformation. Cutting corners here leads to compounding problems in [Phase 2](/transformation/phase-2-expansion/) and [Phase 3](/transformation/phase-3-enterprise-scale/). Invest the focus to build solid foundations — but do not confuse thoroughness with slowness.

@@ -1,10 +1,10 @@
 ---
-title: "Phase 2: Structured Expansion (3-9 Months)"
+title: "Phase 2: Structured Expansion (Months 1-3)"
 sidebar_position: 1
 description: "Expanding AI-assisted development with governance and measurement."
 ---
 
-# Phase 2: Structured Expansion (3-9 Months)
+# Phase 2: Structured Expansion (Months 1-3)
 
 Phase 2 scales AI-assisted development beyond pilot teams with formal governance frameworks, CI/CD pipeline integration, cross-team knowledge sharing, expanded metrics, and structured risk assessment. Where [Phase 1: Foundation](/transformation/phase-1-foundation/) proved the concept with controlled pilots, Phase 2 builds the organizational infrastructure to support 5-10 teams operating under AEEF standards simultaneously. This is the phase where ad hoc practices become repeatable processes and informal guidelines become enforced governance.
 
@@ -74,15 +74,13 @@ Phase 2 expands the core team and introduces new roles:
 
 ## Timeline
 
-| Month | Key Activities |
+| Period | Key Activities |
 |---|---|
-| **Month 3** | Launch Phase 2; design governance framework; begin CI/CD integration planning; identify expansion teams |
-| **Month 4** | Deploy governance workflows; configure CI/CD gates; onboard first wave of expansion teams (2-3 teams) |
-| **Month 5** | Launch Community of Practice; begin prompt library population; governance framework operational |
-| **Month 6** | Onboard second wave of expansion teams (2-3 additional teams); expand KPI dashboards; mid-phase review |
-| **Month 7** | Risk assessment automation operational; cross-team showcases begin; refine governance based on feedback |
-| **Month 8** | Full dashboard operational; all expansion teams active; begin Phase 2 completion assessment |
-| **Month 9** | Compile Phase 2 Completion Report; conduct go/no-go review for Phase 3; lessons-learned sessions |
+| **Weeks 5-6** | Launch Phase 2; design governance framework; begin CI/CD integration planning; identify expansion teams; onboard first wave (2-3 teams) |
+| **Weeks 7-8** | Deploy governance workflows; configure CI/CD gates; launch Community of Practice; begin prompt library population |
+| **Weeks 9-10** | Governance framework operational; onboard second wave (2-3 additional teams); expand KPI dashboards; mid-phase review |
+| **Weeks 11-12** | Risk assessment automation operational; cross-team showcases; all expansion teams active; full dashboard operational |
+| **Week 13** | Compile Phase 2 Completion Report; conduct go/no-go review for Phase 3; lessons-learned sessions |
 
 ## Success Criteria
 
@@ -101,4 +99,4 @@ Phase 2 is considered successful when ALL mandatory criteria are met:
 
 At the end of Phase 2, the Steering Committee MUST conduct a formal go/no-go review for [Phase 3: Enterprise Scale](/transformation/phase-3-enterprise-scale/). The Phase Lead SHALL present the Phase 2 Completion Report demonstrating that governance, automation, and measurement infrastructure can support organization-wide adoption.
 
-Phase 2 is the longest phase and the most operationally complex. It is where the transformation either builds sustainable momentum or stalls. Organizations that invest in robust governance and genuine knowledge sharing during this phase will find Phase 3 a natural progression rather than a disruptive leap.
+Phase 2 is operationally the most complex phase. It is where the transformation either builds sustainable momentum or stalls. Organizations that invest in robust governance and genuine knowledge sharing during this phase will find Phase 3 a natural progression rather than a disruptive leap.
