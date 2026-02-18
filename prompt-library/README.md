@@ -20,10 +20,16 @@ Execution-ready prompts aligned with the PRD-STD series and role guides.
 | Documentation | Change Summary and Runbook | `by-use-case/documentation/change-summary-and-runbook.md` |
 | Dependency Compliance | Dependency Risk Check | `by-use-case/dependency-compliance/dependency-risk-check.md` |
 | Developer Role | Feature Implementation | `by-role/developer/feature-implementation.md` |
+| Development Manager Role | Quality, Risk, and Enablement Plan | `by-role/development-manager/quality-risk-enablement-plan.md` |
+| Scrum Master Role | Sprint Capacity and Risk Calibration | `by-role/scrum-master/sprint-capacity-and-risk-calibration.md` |
 | Security Role | Security Review and Remediation | `by-role/security-engineer/security-review-and-remediation.md` |
 | Platform Role | CI Quality Gate Design | `by-role/platform-engineer/ci-quality-gates.md` |
 | Product Role | Story Hardening | `by-role/product-manager/story-hardening.md` |
+| Executive Role | Board Risk and ROI Brief | `by-role/executive/board-risk-and-roi-brief.md` |
+| CTO Role | Architecture Governance Decision Pack | `by-role/cto/architecture-governance-decision-pack.md` |
+| QA Lead Role | Release Readiness Risk Decision | `by-role/qa-lead/release-readiness-risk-decision.md` |
 | Compliance Role | Audit Evidence Request | `by-role/compliance-officer/audit-evidence-request.md` |
+| Solution Architect Role | Architecture Conformance and Agent Handoffs | `by-role/solution-architect/architecture-conformance-and-agent-handoffs.md` |
 
 ## Governance Notes
 

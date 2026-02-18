@@ -8,13 +8,14 @@ description: "Execution-ready checklist, prompts, and role ownership for PRD-STD
 
 This kit translates the PRD-STD series into an execution plan your team can run immediately.
 
-## 30/60/90-Day Rollout
+## 30/60/90-Day Rollout (+ AI Product Extension)
 
 | Window | Objective | Done Criteria |
 |---|---|---|
 | Day 0-30 | Lock Level 1 controls | PRD-STD-002, PRD-STD-004, PRD-STD-008 checks active in CI and enforced on every PR |
 | Day 31-60 | Standardize team workflows | PRD-STD-001, PRD-STD-003, PRD-STD-007 implemented with reusable templates and gate thresholds |
-| Day 61-90 | Stabilize sustainability controls | PRD-STD-005 and PRD-STD-006 integrated into planning, reviews, and reporting |
+| Day 61-90 | Stabilize sustainability and agent governance controls | PRD-STD-005, PRD-STD-006, and PRD-STD-009 integrated into planning, reviews, and reporting |
+| Day 91-120 (AI product teams) | Enforce production AI behavior controls | PRD-STD-010, PRD-STD-011, and PRD-STD-012 integrated into launch, monitoring, and governance reviews |
 
 ## Minimum Enforcement Checklist
 
@@ -23,6 +24,10 @@ This kit translates the PRD-STD series into an execution plan your team can run 
 - [ ] Test coverage and regression checks run in CI (`PRD-STD-003`, `PRD-STD-007`)
 - [ ] Prompt references captured in PR template (`PRD-STD-001`, `PRD-STD-005`)
 - [ ] Technical debt register updated on exceptions (`PRD-STD-006`)
+- [ ] Agent IDs, handoff records, and role contracts captured for autonomous workflows (`PRD-STD-009`)
+- [ ] AI product releases include risk tier, safety gate, abuse evaluation, and kill-switch readiness (`PRD-STD-010`)
+- [ ] Data/model lineage, rights checks, and evaluation integrity evidence captured (`PRD-STD-011`)
+- [ ] Inference SLOs, fallback behavior, and cost budget controls are active with alerts (`PRD-STD-012`)
 
 ## Ready-Made Prompts by Standard
 
@@ -136,6 +141,68 @@ For each new/updated dependency provide:
 Recommend safer alternatives when rejecting.
 ```
 
+### PRD-STD-009 Autonomous & Multi-Agent Governance
+
+```text
+Review this role-agent workflow for governance compliance.
+Validate:
+- agent identity and role-owner mapping
+- explicit agent contract boundaries
+- handoff artifact completeness
+- human approval points
+- audit traceability fields (AI-Usage, AI-Prompt-Ref, Agent-IDs, AI-Risk-Notes)
+Return:
+1) compliance status by control (PASS/FAIL)
+2) control violations with evidence
+3) merge/deploy blocking decisions
+4) remediation actions and owners
+```
+
+### PRD-STD-010 AI Product Safety & Trust Controls
+
+```text
+Review this AI product release for trust-readiness.
+Validate:
+- risk tier and policy boundary definition
+- harmful-output and abuse test evidence
+- rollout halt thresholds and kill-switch readiness
+- trust telemetry and incident ownership
+Return:
+1) gate decision (APPROVE/CONDITIONAL/REJECT)
+2) blocker list with evidence
+3) residual risks and required owners
+```
+
+### PRD-STD-011 Model & Data Governance
+
+```text
+Perform a model/data governance review for this AI feature release.
+Validate:
+- dataset lineage, rights, and retention metadata
+- evaluation set isolation and leakage controls
+- model/data version traceability
+- reproducibility pack completeness
+Return:
+1) compliance status by control (PASS/FAIL)
+2) missing evidence and risk level
+3) release-blocking gaps and remediation owners
+```
+
+### PRD-STD-012 Inference Reliability & Cost Controls
+
+```text
+Assess inference readiness for production launch.
+Evaluate:
+- latency/availability/error SLO definitions
+- load-test and fallback readiness
+- alert routing and auto-mitigation thresholds
+- unit-cost budget and cost-breach response plan
+Return:
+1) reliability verdict (PASS/FAIL)
+2) cost-control verdict (PASS/FAIL)
+3) mandatory fixes before scale-up
+```
+
 ## Role Ownership Matrix
 
 | Standard | Primary Owner | Secondary Owner |
@@ -148,11 +215,15 @@ Recommend safer alternatives when rejecting.
 | PRD-STD-006 | Development Manager | CTO |
 | PRD-STD-007 | Platform Engineer | QA Lead |
 | PRD-STD-008 | Security Engineer | Compliance Officer |
+| PRD-STD-009 | Solution Architect | Platform Engineer |
+| PRD-STD-010 | Product Manager | Security Engineer |
+| PRD-STD-011 | Compliance Officer | CTO |
+| PRD-STD-012 | Platform Engineer | CTO |
 
 ## First Week Execution Script
 
 1. Select one active service and run the Level 1 checklist.
-2. Add PR template fields: `AI-Usage`, `AI-Prompt-Ref`, `AI-Risk-Notes`.
+2. Add PR template fields: `AI-Usage`, `AI-Prompt-Ref`, `Agent-IDs`, `AI-Risk-Notes`.
 3. Enable SAST/SCA checks with blocking thresholds for Critical and High findings.
 4. Run the code review and testing prompts above on three recent PRs.
 5. Create baseline metrics: defect density, escaped defects, security findings, lead time.

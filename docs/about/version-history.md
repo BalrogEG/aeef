@@ -80,6 +80,30 @@ The initial release was developed by the AEEF Standards Committee with input fro
 
 ---
 
+### v1.0.1 — Autonomous Governance and Role Coverage Update
+
+**Release Date:** February 18, 2026
+
+**Release Type:** Patch
+
+**Summary:** Added formal autonomous and multi-agent governance controls, introduced a dedicated Solution Architect role guide, and completed role-based prompt coverage for all published roles.
+
+#### Standards and Governance
+- Published **PRD-STD-009: Autonomous & Multi-Agent Governance** as an active standard
+- Added agent identity, contract, handoff, and traceability control requirements
+- Integrated autonomous workflow evidence requirements into rollout guidance and production standards navigation
+
+#### Role Architecture and Agent Operating Model
+- Added **Solution Architect Guide** with architecture, handoff, governance, and assurance guidance
+- Updated role navigation and cross-role dependency mappings to include Solution Architect responsibilities
+- Expanded role-focused prompt catalog to provide one prompt entry for each published role guide
+
+#### Documentation Alignment
+- Updated standards index and sidebars to include PRD-STD-009
+- Updated rollout kit checklists and ownership matrix to include autonomous workflow controls
+
+---
+
 ## Planned Releases
 
 The following releases are planned. Dates and scope are subject to change based on community feedback and evolving industry needs.
@@ -88,7 +112,7 @@ The following releases are planned. Dates and scope are subject to change based 
 
 **Planned Focus Areas:**
 
-- **Autonomous Agent Governance** — Standards for governing AI autonomous coding agents (e.g., agents that can independently create branches, write code, and submit pull requests). This represents a significant evolution beyond AI-assisted development toward AI-autonomous development.
+- **Autonomous Governance Expansion** — Operational playbooks, implementation patterns, and maturity benchmarks that extend PRD-STD-009 for large-scale enterprise rollouts.
 - **Multi-Modal AI Standards** — Guidance for AI tools that operate across modalities (code, documentation, diagrams, infrastructure-as-code) with a unified governance approach.
 - **Vendor Assessment Framework** — Standardized criteria for evaluating and selecting AI coding tool vendors, including data handling, model isolation, security posture, and contractual requirements.
 - **Implementation Case Studies** — Anonymized case studies from organizations that have implemented AEEF v1.0, documenting lessons learned, transition timelines, and measured outcomes.

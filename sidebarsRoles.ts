@@ -80,6 +80,17 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
+      label: 'Solution Architect',
+      link: {type: 'doc', id: 'solution-architect/index'},
+      items: [
+        'solution-architect/reference-architecture',
+        'solution-architect/agent-contracts-handoffs',
+        'solution-architect/governance-enforcement',
+        'solution-architect/architecture-assurance-metrics',
+      ],
+    },
+    {
+      type: 'category',
       label: 'QA / Test Lead',
       link: {type: 'doc', id: 'qa-lead/index'},
       items: [

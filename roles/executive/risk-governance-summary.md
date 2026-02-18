@@ -6,7 +6,7 @@ description: "Executive summary of AI engineering risks and governance."
 
 # Risk & Governance Executive Summary
 
-AI-assisted development creates measurable business value, but it also introduces risks that require board-level awareness and executive-level governance. This section provides a concise overview of the top risks, the governance framework designed to contain them, and the mitigation strategies that protect your organization. It distills the detailed standards in [Pillar 3: Governance & Oversight](/pillars/pillar-2-governance-risk/) into an executive-ready summary.
+AI-assisted development creates measurable business value, but it also introduces risks that require board-level awareness and executive-level governance. This section provides a concise overview of the top risks, the governance framework designed to contain them, and the mitigation strategies that protect your organization. It distills the detailed standards in [Pillar 2: Governance & Risk Control](/pillars/pillar-2-governance-risk/) into an executive-ready summary.
 
 ## Top Risks
 
@@ -26,7 +26,7 @@ AI-assisted development creates measurable business value, but it also introduce
 
 **Business impact:** Data breaches ($4.88M average cost per incident), regulatory penalties (GDPR, CCPA, PCI-DSS), reputational damage, customer trust erosion.
 
-**Mitigation:** Mandatory security scanning in CI/CD ([PRD-STD-005](/production/standards/PRD-STD-004-security-scanning)), enhanced security review for AI-generated code, pre-commit secret detection hooks, developer security awareness training, regular penetration testing.
+**Mitigation:** Mandatory security scanning in CI/CD ([PRD-STD-004](/production/standards/PRD-STD-004-security-scanning)), enhanced security review for AI-generated code, pre-commit secret detection hooks, developer security awareness training, regular penetration testing.
 
 **Residual risk level:** Low-Medium (with governance); Critical (without governance).
 
@@ -89,7 +89,7 @@ The AEEF governance framework operates at three levels:
 |-----------|-------|---------------|
 | Code review standards ([PRD-STD-002](/production/standards/PRD-STD-002-code-review)) | CTO / VP Engineering | Semi-annual |
 | Testing standards ([PRD-STD-003](/production/standards/PRD-STD-003-testing-requirements)) | QA Lead / CTO | Semi-annual |
-| Security standards ([PRD-STD-005](/production/standards/PRD-STD-004-security-scanning)) | CISO / CTO | Quarterly |
+| Security standards ([PRD-STD-004](/production/standards/PRD-STD-004-security-scanning)) | CISO / CTO | Quarterly |
 | Tool approval process | CTO | Quarterly |
 
 ### Level 3: Operations (Development Managers / Team Leads)

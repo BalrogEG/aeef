@@ -21,6 +21,10 @@ const sidebars: SidebarsConfig = {
         'standards/PRD-STD-006-technical-debt',
         'standards/PRD-STD-007-quality-gates',
         'standards/PRD-STD-008-dependency-compliance',
+        'standards/PRD-STD-009-autonomous-agent-governance',
+        'standards/PRD-STD-010-ai-product-safety-trust',
+        'standards/PRD-STD-011-model-data-governance',
+        'standards/PRD-STD-012-inference-reliability-cost-controls',
       ],
     },
     {

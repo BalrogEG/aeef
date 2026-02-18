@@ -1,18 +1,18 @@
 ---
 title: "Standards & Guidelines"
 sidebar_position: 1
-description: "Formal production standards for AI-assisted development."
+description: "Formal production standards for AI-assisted development and AI-powered product behavior."
 ---
 
 # Standards & Guidelines
 
-This section contains the formal production standards (PRD-STD series) that govern AI-assisted development practices within the AEEF framework. Each standard follows RFC 2119 language conventions and includes clear requirements, implementation guidance, and compliance criteria.
+This section contains the formal production standards (PRD-STD series) that govern AI-assisted development practices and AI-powered product behavior within the AEEF framework. Each standard follows RFC 2119 language conventions and includes clear requirements, implementation guidance, and compliance criteria.
 
 ## Overview
 
-The PRD-STD series establishes the minimum quality, security, and governance requirements for organizations using AI coding assistants in production development. With 92% of US developers now using AI tools daily and AI co-authored code showing 1.7x more issues and 2.74x higher vulnerability rates, these standards exist to ensure that the velocity gains from AI assistance do not come at the expense of software quality, security, or maintainability.
+The PRD-STD series establishes the minimum quality, security, and governance requirements for organizations using AI coding assistants and shipping AI-powered product features in production. With 92% of US developers now using AI tools daily and AI co-authored code showing 1.7x more issues and 2.74x higher vulnerability rates, these standards exist to ensure that velocity gains do not come at the expense of quality, safety, security, or maintainability.
 
-For teams that need immediate execution guidance, start with the [Apply-Ready Rollout Kit](/production/standards/apply-ready-rollout-kit/). It includes a 30/60/90-day rollout plan, copy-paste prompts, and role ownership mapping for all eight standards.
+For teams that need immediate execution guidance, start with the [Apply-Ready Rollout Kit](/production/standards/apply-ready-rollout-kit/). It includes a 30/60/90-day rollout plan, copy-paste prompts, and role ownership mapping for all twelve standards.
 
 All standards in this series use RFC 2119 keywords:
 
@@ -34,6 +34,10 @@ All standards in this series use RFC 2119 keywords:
 | [PRD-STD-006](/production/standards/PRD-STD-006-technical-debt/) | Technical Debt Management | **Active** | Level 3 | Establishes criteria for identifying, tracking, prioritizing, and remediating technical debt introduced by AI-generated code, including debt budget limits and remediation timelines. |
 | [PRD-STD-007](/production/standards/PRD-STD-007-quality-gates/) | Performance & Quality Gates | **Active** | Level 2 | Defines the quality gates that AI-assisted development outputs must pass before deployment, including build, test, security, performance, and deployment gates. |
 | [PRD-STD-008](/production/standards/PRD-STD-008-dependency-compliance/) | Dependency & License Compliance | **Active** | Level 1 | Specifies requirements for managing dependencies introduced by AI-generated code, including license compatibility, vulnerability monitoring, and supply chain security. |
+| [PRD-STD-009](/production/standards/PRD-STD-009-autonomous-agent-governance/) | Autonomous & Multi-Agent Governance | **Active** | Level 2 | Defines governance controls for autonomous and multi-agent AI workflows, including agent contracts, handoff controls, traceability, and human-approval safeguards. |
+| [PRD-STD-010](/production/standards/PRD-STD-010-ai-product-safety-trust/) | AI Product Safety & Trust Controls | **Active** | Level 2 | Defines mandatory safety, integrity, abuse-resistance, rollout containment, and trust incident controls for AI-powered product behavior. |
+| [PRD-STD-011](/production/standards/PRD-STD-011-model-data-governance/) | Model & Data Governance | **Active** | Level 2 | Establishes requirements for data rights, lineage, evaluation integrity, model documentation, and reproducibility for production AI features. |
+| [PRD-STD-012](/production/standards/PRD-STD-012-inference-reliability-cost-controls/) | Inference Reliability & Cost Controls | **Active** | Level 2 | Defines runtime SLO, resilience, observability, fallback, and unit-economics controls for production AI inference services. |
 
 ## Compliance Levels
 
@@ -54,6 +58,10 @@ These standards provide comprehensive quality controls:
 - **PRD-STD-001: Prompt Engineering** -- Structured prompting reduces the rate of defective AI outputs and improves consistency across teams.
 - **PRD-STD-003: Testing Requirements** -- Rigorous testing catches the issues that code review alone misses.
 - **PRD-STD-007: Quality Gates** -- Automated enforcement prevents non-compliant code from reaching production.
+- **PRD-STD-009: Autonomous & Multi-Agent Governance** -- Agent orchestration controls keep role-specific autonomous workflows auditable and within policy boundaries.
+- **PRD-STD-010: AI Product Safety & Trust Controls** -- AI feature behavior must meet safety and trust controls before and after release.
+- **PRD-STD-011: Model & Data Governance** -- Production AI behavior requires auditable data/model lineage, rights, and evaluation integrity.
+- **PRD-STD-012: Inference Reliability & Cost Controls** -- AI runtime must meet service objectives and sustainable unit-economics constraints.
 
 ### Level 3 -- Optimized (Target within 24 months)
 
@@ -80,6 +88,7 @@ Every standard in the PRD-STD series follows a consistent eight-section structur
 These standards apply to:
 
 - All production code that is generated, modified, or influenced by AI coding assistants
+- All production AI-powered features where model output influences user-facing behavior or operational decisions
 - All development environments where AI tools are authorized for use
 - All teams and individual contributors who use AI tools as part of their development workflow
 - Both greenfield and brownfield projects
