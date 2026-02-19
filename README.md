@@ -35,7 +35,7 @@ Generates static output in `build/`.
 npm run serve -- --host 127.0.0.1 --port 3085
 ```
 
-This is the production-style runtime used behind Nginx for `aaee.buildstudio.app`.
+This is the production-style runtime used behind Nginx for `aeef.ai`.
 
 ## Quality Checks
 

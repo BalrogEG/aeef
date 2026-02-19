@@ -353,7 +353,7 @@ cat > docs/decisions/000-use-aeef-standards.md << 'EOF'
 **Date:** $(date +%Y-%m-%d)
 **Status:** Accepted
 **Decision:** This project follows AEEF standards for AI-assisted development.
-**Reference:** https://aeef.codemeld.io/pillars/startup-quick-start
+**Reference:** https://aeef.ai/pillars/startup-quick-start
 EOF
 
 echo "Setup complete. Now create your CLAUDE.md or .cursorrules from the starters above."

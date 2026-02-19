@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://aaee.buildstudio.app/schemas/ai-provenance.schema.json",
+  "$id": "https://aeef.ai/schemas/ai-provenance.schema.json",
   "title": "AI Provenance Record",
   "type": "object",
   "required": ["provenance"],

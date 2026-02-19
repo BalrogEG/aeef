@@ -72,7 +72,7 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${
   </g>
 
   <!-- URL -->
-  <text x="82" y="580" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" fill="white" opacity="0.5">aeef.codemeld.io</text>
+  <text x="82" y="580" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" fill="white" opacity="0.5">aeef.ai</text>
 
   <!-- Open Source badge -->
   <g transform="translate(920, 540)">

@@ -1,9 +1,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: AEEF Production Standards
-    url: https://aaee.buildstudio.app/production/standards/
+    url: https://aeef.ai/production/standards/
     about: Read the standards before opening implementation or governance issues.
   - name: Open-Source Onboarding Guide
-    url: https://aaee.buildstudio.app/production/tool-guides/open-source-onboarding-expert-network/
+    url: https://aeef.ai/production/tool-guides/open-source-onboarding-expert-network/
     about: Follow the onboarding and expert intake model before starting AI-assisted implementation.
-

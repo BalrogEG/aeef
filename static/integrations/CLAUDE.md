@@ -2,7 +2,7 @@
 
 > Drop this file into the root of your repository as `CLAUDE.md` (for Claude Code) or adapt for your AI coding tool.
 > It enforces the AI-Accelerated Enterprise Engineering Framework (AEEF) during AI-assisted development sessions.
-> Full framework: https://aaee.buildstudio.app
+> Full framework: https://aeef.ai
 
 ## You Are the Accountable Engineer
 

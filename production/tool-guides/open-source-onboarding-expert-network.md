@@ -52,10 +52,10 @@ The AEEF provides ready-to-use configuration files that encode framework standar
 
 ```bash
 # Claude Code
-curl -o CLAUDE.md https://aeef.codemeld.io/integrations/CLAUDE.md
+curl -o CLAUDE.md https://aeef.ai/integrations/CLAUDE.md
 
 # Cursor
-curl -o .cursorrules https://aeef.codemeld.io/integrations/.cursorrules
+curl -o .cursorrules https://aeef.ai/integrations/.cursorrules
 
 # GitHub Copilot (adapt from CLAUDE.md)
 mkdir -p .github && cp CLAUDE.md .github/copilot-instructions.md
@@ -162,4 +162,3 @@ Track adoption and community health with these operational KPIs:
 - Repository onboarding rules: `CONTRIBUTING.md`
 - Contributing guide: [Contributing to These Standards](/pillars/about/contributing)
 - Production standards index: [Standards & Guidelines](/production/standards/)
-

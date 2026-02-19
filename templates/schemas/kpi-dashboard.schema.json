@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://aaee.buildstudio.app/schemas/kpi-dashboard.schema.json",
+  "$id": "https://aeef.ai/schemas/kpi-dashboard.schema.json",
   "title": "AEEF KPI Dashboard Payload",
   "type": "object",
   "required": ["snapshot_date", "productivity", "risk", "financial"],

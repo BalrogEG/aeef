@@ -80,7 +80,7 @@ Beyond commit-level attribution, organizations MUST maintain structured generati
 
 ```json
 {
-      "$schema": "https://aaee.buildstudio.app/schemas/ai-provenance.schema.json",
+      "$schema": "https://aeef.ai/schemas/ai-provenance.schema.json",
   "provenance": {
     "id": "prov-20260215-143000-abc123",
     "generation": {

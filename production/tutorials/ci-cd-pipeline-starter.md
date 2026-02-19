@@ -150,7 +150,7 @@ jobs:
             if (!hasAIUsage || !hasAITool) {
               core.warning(
                 'PR description is missing AI disclosure fields (AI-Usage, AI-Tool). ' +
-                'Please use the PR template. See: https://aeef.codemeld.io/production/tutorials/starter-configs'
+                'Please use the PR template. See: https://aeef.ai/production/tutorials/starter-configs'
               );
             }
 
