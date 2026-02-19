@@ -3,13 +3,14 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const siteUrl = process.env.SITE_URL ?? 'https://aeef.ai';
-const feedbackEndpoint = process.env.FEEDBACK_ENDPOINT ?? '';
-const feedbackEmail = process.env.FEEDBACK_EMAIL ?? '';
+const feedbackEndpoint =
+  process.env.FEEDBACK_ENDPOINT ?? 'https://formsubmit.co/ajax/info@codemeld.io';
+const feedbackEmail = process.env.FEEDBACK_EMAIL ?? 'info@codemeld.io';
 
 const config: Config = {
   title: 'AEEF Standards',
   tagline: 'Enterprise Standards for AI-Accelerated Engineering',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo-dark.png',
 
   future: {
     v4: true,
@@ -54,6 +55,28 @@ const config: Config = {
       },
     },
     {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: 'anonymous',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap',
+      },
+    },
+    {
       tagName: 'script',
       attributes: {
         type: 'application/ld+json',
@@ -63,7 +86,7 @@ const config: Config = {
         '@type': 'Organization',
         name: 'AEEF Standards',
         url: 'https://aeef.ai',
-        logo: 'https://aeef.ai/img/logo.svg',
+        logo: 'https://aeef.ai/img/logo-light.png',
         description: 'The AI-Accelerated Enterprise Engineering Framework (AEEF) provides governance-embedded, measurable enterprise standards for AI-assisted software engineering.',
         sameAs: [],
       }),
@@ -165,7 +188,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/aeef-social-card.png',
+    image: 'img/header-social-preview.jpg',
     metadata: [
       {name: 'description', content: 'AEEF Standards provides governance-embedded, measurable enterprise standards for AI-assisted software engineering. Five pillars, maturity model, role-based guides, and production standards.'},
       {name: 'og:type', content: 'website'},
@@ -188,7 +211,8 @@ const config: Config = {
       title: 'AEEF Standards',
       logo: {
         alt: 'AEEF Standards Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo-light.png',
+        srcDark: 'img/logo-dark.png',
       },
       items: [
         {
@@ -271,7 +295,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright &copy; ${new Date().getFullYear()} AI-Accelerated Enterprise Engineering Framework (AEEF). All rights reserved.`,
+      copyright: `Copyright &copy; ${new Date().getFullYear()} AI-Accelerated Enterprise Engineering Framework (AEEF). All rights reserved.<br /><span class="footer-cofounders">Co-founded by <a href="https://www.linkedin.com/in/wnabil/" target="_blank" rel="noopener noreferrer">W. Nabil</a> and <a href="https://www.linkedin.com/in/salemin/" target="_blank" rel="noopener noreferrer">M. Salem</a>. AEEF is an open-source framework. Send comments to info@codemeld.io and we will keep improving and updating it.</span>`,
     },
     prism: {
       theme: prismThemes.github,

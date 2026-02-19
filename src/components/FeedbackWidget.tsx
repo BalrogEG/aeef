@@ -8,20 +8,18 @@ type FeedbackCustomFields = {
   feedbackEmail?: string;
 };
 
+const DEFAULT_FEEDBACK_ENDPOINT = 'https://formsubmit.co/ajax/info@codemeld.io';
+
 export default function FeedbackWidget() {
   const {siteConfig} = useDocusaurusContext();
   const customFields = (siteConfig.customFields ?? {}) as FeedbackCustomFields;
 
   const feedbackEndpoint = useMemo(
-    () => (customFields.feedbackEndpoint ?? '').trim(),
+    () => (customFields.feedbackEndpoint ?? DEFAULT_FEEDBACK_ENDPOINT).trim() || DEFAULT_FEEDBACK_ENDPOINT,
     [customFields.feedbackEndpoint],
   );
-  const feedbackEmail = useMemo(
-    () => (customFields.feedbackEmail ?? '').trim(),
-    [customFields.feedbackEmail],
-  );
 
-  const canSubmit = Boolean(feedbackEndpoint || feedbackEmail);
+  const canSubmit = Boolean(feedbackEndpoint);
   const [isOpen, setIsOpen] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -64,9 +62,9 @@ export default function FeedbackWidget() {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    if (!canSubmit || !message.trim()) {
+    if (!message.trim()) {
       setSubmitState('error');
-      setErrorMessage('Feedback is not configured yet. Please set FEEDBACK_ENDPOINT or FEEDBACK_EMAIL.');
+      setErrorMessage('Please enter your feedback message before submitting.');
       return;
     }
 
@@ -82,43 +80,50 @@ export default function FeedbackWidget() {
       userAgent: window.navigator.userAgent,
     };
 
-    if (feedbackEndpoint) {
-      try {
-        const response = await fetch(feedbackEndpoint, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-          },
-          body: JSON.stringify(payload),
-        });
+    const outboundPayload = {
+      name: payload.name || 'Anonymous',
+      ...(payload.email ? {email: payload.email} : {}),
+      message: payload.message,
+      pageUrl: payload.pageUrl,
+      submittedAt: payload.submittedAt,
+      userAgent: payload.userAgent,
+      _subject: `AEEF website feedback from ${payload.name || 'anonymous user'}`,
+      _template: 'table',
+      _captcha: 'false',
+    };
 
-        if (!response.ok) {
-          throw new Error(`Submission failed (${response.status})`);
-        }
+    try {
+      const response = await fetch(feedbackEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(outboundPayload),
+      });
 
-        setSubmitState('success');
-        resetForm();
-        return;
-      } catch {
-        setSubmitState('error');
-        setErrorMessage('Could not send feedback. Please try again in a moment.');
-        return;
+      if (!response.ok) {
+        throw new Error(`Submission failed (${response.status})`);
       }
+
+      let responseData: {success?: boolean | string; message?: string} | null = null;
+      try {
+        responseData = (await response.json()) as {success?: boolean | string; message?: string};
+      } catch {
+        responseData = null;
+      }
+
+      if (responseData?.success === false || responseData?.success === 'false') {
+        throw new Error(responseData.message ?? 'Submission failed');
+      }
+
+      setSubmitState('success');
+      resetForm();
+    } catch (error) {
+      setSubmitState('error');
+      const messageText = error instanceof Error ? error.message : '';
+      setErrorMessage(messageText || 'Could not send feedback. Please try again in a moment.');
     }
-
-    const subject = encodeURIComponent(`Website feedback from ${payload.name || 'anonymous user'}`);
-    const body = encodeURIComponent(
-      `Page: ${payload.pageUrl}\n` +
-        `Name: ${payload.name || 'Anonymous'}\n` +
-        `Email: ${payload.email || 'Not provided'}\n` +
-        `Submitted: ${payload.submittedAt}\n\n` +
-        payload.message,
-    );
-
-    window.location.href = `mailto:${feedbackEmail}?subject=${subject}&body=${body}`;
-    setSubmitState('success');
-    resetForm();
   };
 
   return (
@@ -205,14 +210,8 @@ export default function FeedbackWidget() {
                 </button>
               </div>
 
-              {!canSubmit ? (
-                <p className="feedback-status feedback-status--error">
-                  Feedback is disabled. Set FEEDBACK_ENDPOINT or FEEDBACK_EMAIL in your environment.
-                </p>
-              ) : null}
-
               {submitState === 'success' ? (
-                <p className="feedback-status feedback-status--success">Thanks. Your feedback was submitted.</p>
+                <p className="feedback-status feedback-status--success">Thanks. Your feedback was sent.</p>
               ) : null}
 
               {submitState === 'error' && errorMessage ? (

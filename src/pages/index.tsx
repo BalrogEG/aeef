@@ -2,183 +2,268 @@ import type {ReactNode} from 'react';
 import Link from '@docusaurus/Link';
 import Layout from '@theme/Layout';
 
+type Pathway = {
+  title: string;
+  summary: string;
+  audience: string;
+  bullets: string[];
+  cta: string;
+  link: string;
+};
+
+type QuickLink = {
+  title: string;
+  desc: string;
+  link: string;
+};
+
 function HeroSection(): ReactNode {
   return (
-    <div className="hero-section">
+    <section className="home-hero">
       <div className="container">
-        <h1>AEEF Standards</h1>
-        <p className="subtitle">
-          Enterprise Standards for AI-Accelerated Engineering.
-          Governance-embedded, measurable, and transformation-ready.
-        </p>
-        <div className="hero-buttons">
-          <Link className="primary-btn" to="/pillars/startup-quick-start">
-            Startup Quick-Start
-          </Link>
-          <Link className="secondary-btn" to="/transformation/">
-            Transformation Track
-          </Link>
-          <Link className="secondary-btn" to="/production/">
-            Production Standards
-          </Link>
+        <div className="home-hero-copy">
+          <p className="home-kicker">AI-Accelerated Enterprise Engineering Framework</p>
+          <h1>Ship Faster With AI, Without Compromising Quality or Governance</h1>
+          <p className="home-lead">
+            AEEF gives engineering leaders and delivery teams a production-ready operating
+            model for AI-assisted software development: measurable, auditable, and scalable.
+          </p>
+          <div className="home-hero-buttons">
+            <Link className="home-btn home-btn-primary" to="/pillars/startup-quick-start">
+              Start in 1 Day
+            </Link>
+            <Link className="home-btn home-btn-secondary" to="/production/">
+              See Production Standards
+            </Link>
+            <Link className="home-btn home-btn-secondary" to="/transformation/">
+              Plan Enterprise Rollout
+            </Link>
+          </div>
+          <div className="home-trust-strip">
+            <span>5 Pillars</span>
+            <span>12 Production Standards</span>
+            <span>Role-Based Playbooks</span>
+            <span>Maturity Model</span>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-function StatsSection(): ReactNode {
+function PathwaysSection(): ReactNode {
+  const pathways: Pathway[] = [
+    {
+      title: 'Quick-Start',
+      summary: 'Launch controlled AI-assisted delivery this week.',
+      audience: 'Best for startups and small teams moving fast.',
+      bullets: [
+        'Day-1 checklist by team size',
+        'Copy-paste CI and policy starter configs',
+        'Hands-on tutorial from first PR to release',
+      ],
+      cta: 'Go to Quick-Start',
+      link: '/pillars/startup-quick-start',
+    },
+    {
+      title: 'Transformation Track',
+      summary: 'Adopt AI across teams with phased governance.',
+      audience: 'Best for organizations scaling AI usage for the first time.',
+      bullets: [
+        'Foundation, expansion, and enterprise-scale phases',
+        'Operating model lifecycle and gate design',
+        'Org-level capability and maturity progression',
+      ],
+      cta: 'Explore Transformation',
+      link: '/transformation/',
+    },
+    {
+      title: 'Production Standards',
+      summary: 'Run AI-assisted engineering with enforceable controls.',
+      audience: 'Best for teams already shipping with AI in active products.',
+      bullets: [
+        'Normative PRD-STD controls using RFC 2119 language',
+        'Quality, testing, and security requirements',
+        'Auditability, provenance, and policy-ready evidence',
+      ],
+      cta: 'View Standards',
+      link: '/production/standards/',
+    },
+  ];
+
+  return (
+    <section className="home-section">
+      <div className="container">
+        <div className="home-section-head">
+          <p className="home-eyebrow">Start Here</p>
+          <h2>Choose Your Adoption Path</h2>
+          <p>
+            Whether you are standing up a team or scaling across the enterprise, pick the entry
+            point that matches your operating reality.
+          </p>
+        </div>
+        <div className="home-card-grid home-card-grid-3">
+          {pathways.map((path) => (
+            <article className="home-path-card" key={path.title}>
+              <h3>{path.title}</h3>
+              <p className="home-path-summary">{path.summary}</p>
+              <p className="home-path-audience">{path.audience}</p>
+              <ul>
+                {path.bullets.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+              <Link className="home-inline-link" to={path.link}>
+                {path.cta}
+              </Link>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function QuickLinksSection(): ReactNode {
+  const links: QuickLink[] = [
+    {
+      title: 'PRD-STD Standards',
+      desc: 'Formal controls for prompt engineering, review, testing, and security.',
+      link: '/production/standards/',
+    },
+    {
+      title: 'CI/CD Starter',
+      desc: 'Reference pipeline patterns for quality gates in AI-assisted delivery.',
+      link: '/production/tutorials/ci-cd-pipeline-starter',
+    },
+    {
+      title: 'KPI Framework',
+      desc: 'Measure risk, productivity, and financial outcomes with executive-ready metrics.',
+      link: '/pillars/kpi/',
+    },
+    {
+      title: 'Maturity Model',
+      desc: 'Assess capability from uncontrolled adoption to AI-first operations.',
+      link: '/pillars/maturity/',
+    },
+    {
+      title: 'Role Guides',
+      desc: 'Operational playbooks for developers, managers, security, QA, and executives.',
+      link: '/roles/',
+    },
+    {
+      title: 'Release Updates',
+      desc: 'Track framework evolution and standards change history.',
+      link: '/updates',
+    },
+  ];
+
+  return (
+    <section className="home-section home-section-alt">
+      <div className="container">
+        <div className="home-section-head">
+          <p className="home-eyebrow">Most Used</p>
+          <h2>Core Resources Teams Use Every Week</h2>
+          <p>Jump directly to the assets that typically anchor implementation and governance.</p>
+        </div>
+        <div className="home-card-grid home-card-grid-3">
+          {links.map((item) => (
+            <Link className="home-resource-card" to={item.link} key={item.title}>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ProofSection(): ReactNode {
   const stats = [
     {number: '92%', label: 'of US developers use AI coding tools daily'},
     {number: '1.7x', label: 'more major issues in AI co-authored code'},
     {number: '2.74x', label: 'higher security vulnerability rate'},
-    {number: '41%', label: 'of all code written globally is AI-generated'},
+    {number: '41%', label: 'of global code is now AI-generated'},
   ];
+
   return (
-    <div className="section">
+    <section className="home-section">
       <div className="container">
-        <h2>The Case for Standards</h2>
-        <p className="section-subtitle">
-          AI-assisted engineering is accelerating. Without governance, speed becomes liability.
-        </p>
-        <div className="grid-4">
-          {stats.map((stat, idx) => (
-            <div className="stat-card" key={idx}>
-              <div className="stat-number">{stat.number}</div>
-              <div className="stat-label">{stat.label}</div>
+        <div className="home-section-head">
+          <p className="home-eyebrow">Why AEEF</p>
+          <h2>AI Adoption Is Not Optional. Governance Is.</h2>
+          <p>
+            The velocity gains are real, but unmanaged AI-assisted delivery compounds defects,
+            vulnerabilities, and audit exposure.
+          </p>
+        </div>
+        <div className="home-card-grid home-card-grid-4">
+          {stats.map((stat) => (
+            <div className="home-proof-card" key={stat.number}>
+              <p className="home-proof-number">{stat.number}</p>
+              <p className="home-proof-label">{stat.label}</p>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-function TracksSection(): ReactNode {
-  return (
-    <div className="section-alt">
-      <div className="container">
-        <h2>Three Entry Points, One Framework</h2>
-        <p className="section-subtitle">
-          Choose your entry point based on where your organization is today.
-        </p>
-        <div className="grid-3">
-          <div className="track-card">
-            <h2>Quick-Start</h2>
-            <p style={{color: 'var(--ifm-color-emphasis-700)', marginBottom: '1rem'}}>
-              For startups and small teams who want to start today.
-              No enterprise budget or committee required.
-            </p>
-            <ul style={{color: 'var(--ifm-color-emphasis-600)', fontSize: '0.9rem'}}>
-              <li>Day-1 checklists by team size</li>
-              <li>Copy-paste config files and CI pipelines</li>
-              <li>End-to-end tutorial with real code</li>
-              <li>Free-tier tool guidance</li>
-            </ul>
-            <Link className="button button--primary button--lg" to="/pillars/startup-quick-start">
-              Start Now
-            </Link>
-          </div>
-          <div className="track-card">
-            <h2>Transformation</h2>
-            <p style={{color: 'var(--ifm-color-emphasis-700)', marginBottom: '1rem'}}>
-              For organizations adopting AI-assisted engineering for the first time.
-              A phased journey from foundation to enterprise scale.
-            </p>
-            <ul style={{color: 'var(--ifm-color-emphasis-600)', fontSize: '0.9rem'}}>
-              <li>3-phase adoption roadmap (0-6 months)</li>
-              <li>Operating model lifecycle integration</li>
-              <li>Governance gate implementation</li>
-              <li>Maturity assessment framework</li>
-            </ul>
-            <Link className="button button--primary button--lg" to="/transformation/">
-              Explore Transformation
-            </Link>
-          </div>
-          <div className="track-card">
-            <h2>Production Efficiency</h2>
-            <p style={{color: 'var(--ifm-color-emphasis-700)', marginBottom: '1rem'}}>
-              For teams already using AI tools who need day-to-day standards,
-              best practices, and governance guardrails.
-            </p>
-            <ul style={{color: 'var(--ifm-color-emphasis-600)', fontSize: '0.9rem'}}>
-              <li>8 formal production standards (PRD-STD)</li>
-              <li>Best practices for AI pair programming</li>
-              <li>Tool integration guides</li>
-              <li>Quality gates and security scanning</li>
-            </ul>
-            <Link className="button button--primary button--lg" to="/production/">
-              Explore Production Standards
-            </Link>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function PillarsSection(): ReactNode {
+function FrameworkSection(): ReactNode {
   const pillars = [
-    {num: 1, title: 'Engineering Discipline', desc: 'Structured AI integration into development', link: '/pillars/pillar-1-engineering-discipline/'},
-    {num: 2, title: 'Governance & Risk', desc: 'Compliance embedded into AI workflows', link: '/pillars/pillar-2-governance-risk/'},
-    {num: 3, title: 'Productivity Architecture', desc: 'Standardized productivity multiplication', link: '/pillars/pillar-3-productivity/'},
-    {num: 4, title: 'Operating Model', desc: 'AI embedded into enterprise SDLC', link: '/pillars/pillar-4-operating-model/'},
-    {num: 5, title: 'Organizational Enablement', desc: 'AI as capability, not experiment', link: '/pillars/pillar-5-organizational-enablement/'},
+    {num: 1, title: 'Engineering Discipline', link: '/pillars/pillar-1-engineering-discipline/'},
+    {num: 2, title: 'Governance & Risk', link: '/pillars/pillar-2-governance-risk/'},
+    {num: 3, title: 'Productivity Architecture', link: '/pillars/pillar-3-productivity/'},
+    {num: 4, title: 'Operating Model', link: '/pillars/pillar-4-operating-model/'},
+    {num: 5, title: 'Organizational Enablement', link: '/pillars/pillar-5-organizational-enablement/'},
   ];
+
   return (
-    <div className="section">
+    <section className="home-section home-section-alt">
       <div className="container">
-        <h2>The Five Pillars</h2>
-        <p className="section-subtitle">
-          AEEF is built on five structural pillars that together form a complete
-          enterprise framework for AI-accelerated engineering.
-        </p>
-        <div className="grid-5">
-          {pillars.map((pillar) => (
-            <Link className="pillar-card" to={pillar.link} key={pillar.num}>
-              <div className="pillar-number">{pillar.num}</div>
-              <h3>{pillar.title}</h3>
-              <p>{pillar.desc}</p>
+        <div className="home-split">
+          <div>
+            <p className="home-eyebrow">Framework Core</p>
+            <h2>Five Pillars, One Operating System for AI Engineering</h2>
+            <p>
+              AEEF is structured to cover the full delivery system: standards, controls, team
+              behavior, and organization-level enablement.
+            </p>
+            <Link className="home-inline-link" to="/pillars/">
+              Explore all pillars
             </Link>
-          ))}
+          </div>
+          <div className="home-pillars-list">
+            {pillars.map((pillar) => (
+              <Link className="home-pillar-row" to={pillar.link} key={pillar.num}>
+                <span className="home-pillar-num">{pillar.num}</span>
+                <span>{pillar.title}</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-function RolesSection(): ReactNode {
+function RolesMaturitySection(): ReactNode {
   const roles = [
-    {title: 'Developer', desc: 'Daily workflows, prompt engineering, code review, security awareness', link: '/roles/developer/'},
-    {title: 'Development Manager', desc: 'Team enablement, quality oversight, metrics, tooling decisions', link: '/roles/development-manager/'},
-    {title: 'Scrum Master', desc: 'Sprint adaptation, estimation, ceremony adjustments, team health', link: '/roles/scrum-master/'},
-    {title: 'Product Manager', desc: 'Roadmap planning, stakeholder expectations, velocity trade-offs', link: '/roles/product-manager/'},
-    {title: 'CEO / Executive', desc: 'Strategic imperative, risk governance, investment ROI, board metrics', link: '/roles/executive/'},
-    {title: 'CTO / VP Engineering', desc: 'Technology strategy, architecture, build vs buy, org design', link: '/roles/cto/'},
-    {title: 'QA / Test Lead', desc: 'Testing strategy, AI test coverage, defect analysis, automation', link: '/roles/qa-lead/'},
+    {title: 'Developer', link: '/roles/developer/'},
+    {title: 'Development Manager', link: '/roles/development-manager/'},
+    {title: 'Scrum Master', link: '/roles/scrum-master/'},
+    {title: 'Product Manager', link: '/roles/product-manager/'},
+    {title: 'Executive', link: '/roles/executive/'},
+    {title: 'CTO / VP Engineering', link: '/roles/cto/'},
+    {title: 'Solution Architect', link: '/roles/solution-architect/'},
+    {title: 'QA / Test Lead', link: '/roles/qa-lead/'},
+    {title: 'Security Engineer', link: '/roles/security-engineer/'},
+    {title: 'Platform Engineer', link: '/roles/platform-engineer/'},
+    {title: 'Compliance Officer', link: '/roles/compliance-officer/'},
   ];
-  return (
-    <div className="section-alt">
-      <div className="container">
-        <h2>Role-Based Guides</h2>
-        <p className="section-subtitle">
-          Every role has a different relationship with AI-assisted engineering.
-          Find the guidance tailored to your responsibilities.
-        </p>
-        <div className="grid-3">
-          {roles.map((role) => (
-            <Link className="role-card" to={role.link} key={role.title}>
-              <h3>{role.title}</h3>
-              <p>{role.desc}</p>
-            </Link>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
 
-function MaturitySection(): ReactNode {
   const levels = [
     {num: 1, label: 'Uncontrolled', className: 'level-1', link: '/pillars/maturity/level-1-uncontrolled'},
     {num: 2, label: 'Exploratory', className: 'level-2', link: '/pillars/maturity/level-2-exploratory'},
@@ -186,27 +271,68 @@ function MaturitySection(): ReactNode {
     {num: 4, label: 'Managed', className: 'level-4', link: '/pillars/maturity/level-4-managed'},
     {num: 5, label: 'AI-First', className: 'level-5', link: '/pillars/maturity/level-5-ai-first'},
   ];
+
   return (
-    <div className="section">
+    <section className="home-section">
       <div className="container">
-        <h2>Maturity Model</h2>
-        <p className="section-subtitle">
-          AEEF defines a five-level maturity progression for AI-assisted engineering adoption.
-        </p>
-        <div className="maturity-bar">
-          {levels.map((level) => (
-            <Link className={`level ${level.className}`} to={level.link} key={level.num}>
-              Level {level.num}<br />{level.label}
-            </Link>
-          ))}
+        <div className="home-two-column">
+          <article className="home-panel">
+            <p className="home-eyebrow">By Role</p>
+            <h3>Guidance Tailored to Accountability</h3>
+            <p>
+              Align daily engineering decisions, management controls, and executive oversight on
+              one framework.
+            </p>
+            <div className="home-chip-grid">
+              {roles.map((role) => (
+                <Link className="home-chip" to={role.link} key={role.title}>
+                  {role.title}
+                </Link>
+              ))}
+            </div>
+          </article>
+          <article className="home-panel">
+            <p className="home-eyebrow">By Capability</p>
+            <h3>Maturity Progression You Can Operationalize</h3>
+            <p>
+              Move step-by-step from ad hoc AI usage to a controlled, measurable AI-first model.
+            </p>
+            <div className="home-maturity">
+              {levels.map((level) => (
+                <Link className={`home-level ${level.className}`} to={level.link} key={level.num}>
+                  L{level.num} {level.label}
+                </Link>
+              ))}
+            </div>
+          </article>
         </div>
-        <div style={{textAlign: 'center', marginTop: '1rem'}}>
-          <Link className="button button--outline button--primary" to="/pillars/maturity/">
-            Explore the Maturity Model
+      </div>
+    </section>
+  );
+}
+
+function FinalCtaSection(): ReactNode {
+  return (
+    <section className="home-final-cta">
+      <div className="container">
+        <h2>Build Your AI Engineering System, Not Just AI Habits</h2>
+        <p>
+          Start with standards, enforce through workflow, and scale through governance that teams
+          can actually run.
+        </p>
+        <div className="home-hero-buttons">
+          <Link className="home-btn home-btn-primary" to="/pillars/startup-quick-start">
+            Start Quick-Start
+          </Link>
+          <Link className="home-btn home-btn-secondary" to="/production/standards/">
+            Open PRD-STD Library
+          </Link>
+          <Link className="home-btn home-btn-secondary" to="/pillars/maturity/">
+            Assess Maturity
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
@@ -217,11 +343,12 @@ export default function Home(): ReactNode {
       description="AEEF Standards provides governance-embedded, measurable enterprise standards for AI-assisted software engineering.">
       <HeroSection />
       <main>
-        <StatsSection />
-        <TracksSection />
-        <PillarsSection />
-        <RolesSection />
-        <MaturitySection />
+        <PathwaysSection />
+        <QuickLinksSection />
+        <ProofSection />
+        <FrameworkSection />
+        <RolesMaturitySection />
+        <FinalCtaSection />
       </main>
     </Layout>
   );
