@@ -85,7 +85,7 @@ This standard works in conjunction with [PRD-STD-004: Security Scanning](/produc
 | Medium (CVSS 4.0-6.9) | 30 days |
 | Low (CVSS 0.1-3.9) | 90 days |
 
-**REQ-008-10:** When a dependency vulnerability cannot be remediated by upgrading, the team MUST evaluate and implement one of the following mitigations: (a) apply a patch, (b) replace the dependency, (c) implement compensating controls, or (d) accept the risk with documented security team approval.
+**REQ-008-10:** When a dependency vulnerability cannot be remediated by upgrading, the team MUST evaluate and implement one of the following mitigations: (a) apply a patch, (b) replace the dependency, (c) implement compensating controls, or (d) accept the risk with documented security team approval (or Security Owner approval in teams without a dedicated security function).
 
 **REQ-008-11:** Dependencies with Critical vulnerabilities that have no available fix MUST be flagged for immediate replacement evaluation. A replacement plan MUST be documented within 72 hours.
 :::
@@ -180,7 +180,7 @@ mvn org.cyclonedx:cyclonedx-maven-plugin:makeBom
 Exceptions MAY be granted for:
 
 - **Restricted (copyleft) licenses** (REQ-008-03) when the dependency is used in a context where copyleft obligations do not apply (e.g., LGPL for dynamic linking, GPL for internal-only tools) -- requires legal review and written approval
-- **Supply chain criteria** (REQ-008-15) for well-known single-maintainer projects with established track records (e.g., core-js) -- requires security team review and documented risk acceptance
+- **Supply chain criteria** (REQ-008-15) for well-known single-maintainer projects with established track records (e.g., core-js) -- requires security team review (or Security Owner review in small teams) and documented risk acceptance
 - **SBOM requirements** (REQ-008-16) for projects in early development that have not reached production deployment -- SBOM MUST be generated before first production deployment
 
 No exceptions are available for prohibited licenses (REQ-008-03), Critical vulnerability handling (REQ-008-11), or lock file requirements (REQ-008-14).

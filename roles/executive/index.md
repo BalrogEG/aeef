@@ -39,7 +39,7 @@ AI-assisted development is not a tools procurement decision that can be delegate
 
 **The risk of inaction:** Organizations that delay adoption face talent attrition (developers want AI tools), competitive disadvantage (competitors are shipping faster), and technical debt (manual processes cannot keep pace with industry velocity).
 
-**The recommendation:** Invest in a structured adoption program following the AEEF framework. Establish governance per [Pillar 3: Governance & Oversight](/pillars/pillar-2-governance-risk/). Measure progress using the metrics defined in [Board-Ready Metrics](/roles/executive/board-ready-metrics). Review progress quarterly at the board level.
+**The recommendation:** Invest in a structured adoption program following the AEEF framework. Establish governance per [Pillar 2: Governance & Risk](/pillars/pillar-2-governance-risk/). Measure progress using the metrics defined in [Board-Ready Metrics](/roles/executive/board-ready-metrics). Review progress quarterly at the board level.
 
 ## Key Relationships
 

@@ -6,7 +6,7 @@ description: "Security awareness for developers using AI coding tools."
 
 # Security Awareness
 
-AI coding tools introduce a new class of security risks that traditional security training does not address. With AI co-authored code showing a 2.74x higher vulnerability rate, every developer must understand not only the vulnerabilities that AI can introduce into your code but also the data leakage risks inherent in using AI tools themselves. This section aligns with [PRD-STD-005](/production/standards/PRD-STD-004-security-scanning) and extends [Pillar 2: Quality Assurance](/pillars/pillar-2-governance-risk/) with AI-specific security guidance.
+AI coding tools introduce a new class of security risks that traditional security training does not address. With AI co-authored code showing a 2.74x higher vulnerability rate, every developer must understand not only the vulnerabilities that AI can introduce into your code but also the data leakage risks inherent in using AI tools themselves. This section aligns with [PRD-STD-004](/production/standards/PRD-STD-004-security-scanning) and extends [Pillar 2: Governance & Risk](/pillars/pillar-2-governance-risk/) with AI-specific security guidance.
 
 ## Two Dimensions of AI Security Risk
 

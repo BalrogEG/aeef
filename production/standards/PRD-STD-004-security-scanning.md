@@ -41,6 +41,7 @@ This standard addresses Static Application Security Testing (SAST), Dynamic Appl
 | **Vulnerability SLA** | The maximum time allowed between vulnerability detection and remediation, based on severity |
 | **False Positive** | A scanning result that incorrectly identifies a vulnerability where none exists |
 | **CVSS** | Common Vulnerability Scoring System -- a standardized framework for rating vulnerability severity |
+| **Security Owner** | A named person accountable for security decisions in teams without a dedicated security function |
 
 ## 4. Requirements
 
@@ -121,14 +122,14 @@ This standard addresses Static Application Security Testing (SAST), Dynamic Appl
 
 | Severity | CVSS Score | Remediation SLA | Escalation |
 |---|---|---|---|
-| **Critical** | 9.0 - 10.0 | **24 hours** | Immediate notification to security team and engineering lead |
+| **Critical** | 9.0 - 10.0 | **24 hours** | Immediate notification to security team (or Security Owner) and engineering lead |
 | **High** | 7.0 - 8.9 | **7 days** | Notification to engineering lead within 24 hours |
 | **Medium** | 4.0 - 6.9 | **30 days** | Tracked in sprint backlog |
 | **Low** | 0.1 - 3.9 | **90 days** | Tracked in backlog |
 
 **REQ-004-21:** Organizations MUST track vulnerability remediation SLA compliance and report metrics monthly.
 
-**REQ-004-22:** SLA violations for Critical and High severity vulnerabilities MUST be reported to the security team and engineering leadership within 24 hours of the SLA expiration.
+**REQ-004-22:** SLA violations for Critical and High severity vulnerabilities MUST be reported to the security team (or Security Owner) and engineering leadership within 24 hours of the SLA expiration.
 :::
 
 :::warning RECOMMENDED
@@ -167,7 +168,7 @@ False positives are a significant challenge with AI-generated code because scann
 
 1. **Document every false positive determination** with the rationale and the reviewer's identity
 2. **Maintain a suppressions file** that is version-controlled and reviewed quarterly
-3. **Never suppress a finding without security team review** for Critical and High findings
+3. **Never suppress a finding without security team review** (or Security Owner review in small teams) for Critical and High findings
 4. **Re-evaluate suppressions** when SAST/SCA tools are updated, as false positive status may change
 5. **Track false positive rate** as a metric to evaluate and tune scanning tool configurations
 
@@ -188,7 +189,7 @@ Exceptions to scanning requirements are strictly limited:
 
 No exceptions are available for SAST scanning (REQ-004-01), SCA scanning (REQ-004-11), secret detection (REQ-004-17), or Critical vulnerability SLAs (REQ-004-20).
 
-Waiver requests MUST be submitted to the security team with documented justification and compensating controls.
+Waiver requests MUST be submitted to the security team (or Security Owner in teams without a dedicated security function) with documented justification and compensating controls.
 
 ## 7. Related Standards
 

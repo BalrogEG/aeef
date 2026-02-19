@@ -6,7 +6,7 @@ description: "Prioritizing test automation for AI-augmented development."
 
 # Automation Priorities
 
-AI-assisted development accelerates code production, which means your manual testing capacity becomes a bottleneck faster than before. Automation is not optional in an AI-augmented environment -- it is the only way to maintain quality at the velocity AI enables. This section defines what to automate first, how to select tools, and how to integrate AI-specific automation into your CI/CD pipeline. It supports [Pillar 2: Quality Assurance](/pillars/pillar-2-governance-risk/) and complements the testing strategy defined in [Testing Strategy](/roles/qa-lead/testing-strategy).
+AI-assisted development accelerates code production, which means your manual testing capacity becomes a bottleneck faster than before. Automation is not optional in an AI-augmented environment -- it is the only way to maintain quality at the velocity AI enables. This section defines what to automate first, how to select tools, and how to integrate AI-specific automation into your CI/CD pipeline. It supports [Pillar 2: Governance & Risk](/pillars/pillar-2-governance-risk/) and complements the testing strategy defined in [Testing Strategy](/roles/qa-lead/testing-strategy).
 
 ## The Automation Imperative
 

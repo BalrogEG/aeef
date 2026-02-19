@@ -6,7 +6,7 @@ description: "Code review responsibilities when working with AI-generated code."
 
 # Code Review Responsibilities
 
-Code review is the single most important quality gate for AI-generated code. Research shows that AI co-authored code has 1.7x more issues and a 2.74x higher vulnerability rate than human-authored code. These statistics do not mean AI tools are unsuitable for production work -- they mean that review rigor must increase to match the volume and speed of AI output. This section defines your responsibilities as both an author and reviewer of AI-assisted code, aligning with [PRD-STD-002](/production/standards/PRD-STD-002-code-review) and [Pillar 2: Quality Assurance](/pillars/pillar-2-governance-risk/).
+Code review is the single most important quality gate for AI-generated code. Research shows that AI co-authored code has 1.7x more issues and a 2.74x higher vulnerability rate than human-authored code. These statistics do not mean AI tools are unsuitable for production work -- they mean that review rigor must increase to match the volume and speed of AI output. This section defines your responsibilities as both an author and reviewer of AI-assisted code, aligning with [PRD-STD-002](/production/standards/PRD-STD-002-code-review) and [Pillar 2: Governance & Risk](/pillars/pillar-2-governance-risk/).
 
 ## The Reviewer's Mindset for AI Code
 

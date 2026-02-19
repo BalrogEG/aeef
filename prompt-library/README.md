@@ -1,13 +1,14 @@
 # Prompt Library
 
-Execution-ready prompts aligned with the PRD-STD series and role guides.
+Prompt templates aligned with the PRD-STD series and role guides. This library includes mixed readiness levels (`draft`, `verified`, `deprecated`).
 
 ## Quick Start
 
 1. Start with one prompt from `by-use-case` or `by-role`.
-2. Replace placeholders and run it against a real task.
-3. Capture the prompt path in your PR (`AI-Prompt-Ref`).
-4. Record outcome quality (accepted, revised, rejected).
+2. Check the prompt status in the file (`draft`, `verified`, `deprecated`).
+3. Replace placeholders and run it against a real task.
+4. Capture the prompt path and status in your PR (`AI-Prompt-Ref`).
+5. Record outcome quality (accepted, revised, rejected).
 
 ## Ready-Made Prompt Set
 
@@ -37,6 +38,13 @@ Execution-ready prompts aligned with the PRD-STD series and role guides.
 - A Tech Lead, QA Lead, or Security Engineer should review prompts before marking them `verified`.
 - Prompt changes should be versioned through pull requests.
 - Any deprecated prompt should include migration guidance to a replacement prompt.
+
+## Production Readiness Rules
+
+- Use `verified` prompts directly in production workflows.
+- Treat `draft` prompts as templates that require local validation before production use.
+- Minimum validation for promoting `draft` to `verified`: 5 representative tests, reviewer sign-off, and documented known limitations.
+- Do not use `deprecated` prompts for new work.
 
 ## Verification Status Labels
 

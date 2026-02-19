@@ -36,6 +36,7 @@ This standard applies to:
 | **Advisory Gate** | A quality gate that reports findings but does not halt the pipeline; used for metrics and trend analysis |
 | **Gate Criteria** | The specific, measurable conditions that must be satisfied to pass a quality gate |
 | **Gate Override** | A documented exception that allows code to bypass a blocking gate; requires authorized approval |
+| **Security Owner** | A named person accountable for security decisions in teams without a dedicated security function |
 
 ## 4. Requirements
 
@@ -102,9 +103,9 @@ This standard applies to:
 | License compliance | No disallowed licenses | Block merge |
 | SAST scan (Medium findings) | Tracked, not blocking | Advisory (logged) |
 
-**REQ-007-12:** Security gates MUST be non-bypassable through normal developer workflows. Gate overrides MUST require security team approval.
+**REQ-007-12:** Security gates MUST be non-bypassable through normal developer workflows. Gate overrides MUST require security team approval, or Security Owner approval in teams without a dedicated security team.
 
-**REQ-007-13:** Security gate configurations MUST be managed as code in a protected repository that requires security team approval for changes.
+**REQ-007-13:** Security gate configurations MUST be managed as code in a protected repository that requires security team approval for changes, or Security Owner approval in small teams.
 :::
 
 :::warning RECOMMENDED
@@ -179,10 +180,18 @@ This standard applies to:
 When a blocking gate must be overridden (emergency scenarios only):
 
 1. The engineer documents the specific gate failure and business justification
-2. An authorized approver (engineering lead for non-security gates; security team for security gates) reviews and approves the override
+2. An authorized approver (engineering lead for non-security gates; security team or Security Owner for security gates) reviews and approves the override
 3. The override is logged in an audit trail with timestamp, approver, justification, and planned remediation
 4. A follow-up ticket is created for remediation within 48 hours (security) or one sprint (non-security)
 5. Override frequency is tracked and reported monthly; excessive overrides indicate misconfigured gates
+
+### Small-Team Security Ownership Model
+
+Teams without a dedicated security function MUST designate a named Security Owner and document this assignment in team governance records.
+
+- Security Owner responsibilities include: security gate override approval, suppression review sign-off, and monthly escalation review
+- Security Owner delegations MUST be explicit and time-bound
+- Security Owner approvals MUST be traceable in pull request, ticket, or change-management records
 
 ### CI/CD Pipeline Example
 

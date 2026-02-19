@@ -15,11 +15,12 @@ These tutorials provide hands-on, step-by-step guidance for adopting AEEF standa
 | [Starter Config Files](/production/tutorials/starter-configs) | 15 min | Copy-paste AI tool configs into your project (CLAUDE.md, .cursorrules, PR template) |
 | [CI/CD Pipeline Starter](/production/tutorials/ci-cd-pipeline-starter) | 15 min | Add automated security scanning and quality gates to your repo |
 | [Your First AI-Governed PR](/production/tutorials/first-ai-pr-tutorial) | 30 min | End-to-end walkthrough: prompt, review, test, and merge AI-assisted code |
+| [Small-Team Multi-Agent Starter](/production/tutorials/small-team-multi-agent-starter) | 90 min | Build role-based AI agents with contracts, handoffs, and governance controls |
 | [Policy Templates](/production/tutorials/policy-templates) | 20 min | Create your AI acceptable use policy and data classification rules |
 
 ## Who Should Start Here
 
-- **Startups and small teams** — Start with [Startup Quick-Start](/pillars/startup-quick-start), then come here for the hands-on setup
+- **Startups and small teams** — Start with [Startup Quick-Start](/pillars/startup-quick-start), then use [Small-Team Multi-Agent Starter](/production/tutorials/small-team-multi-agent-starter) to operationalize role-based agents
 - **Individual developers** — Go directly to [Starter Config Files](/production/tutorials/starter-configs) and [Your First AI-Governed PR](/production/tutorials/first-ai-pr-tutorial)
 - **DevOps / Platform engineers** — Start with [CI/CD Pipeline Starter](/production/tutorials/ci-cd-pipeline-starter)
 - **Managers and leads** — Read [Policy Templates](/production/tutorials/policy-templates) first
@@ -34,3 +35,4 @@ These tutorials implement the same requirements defined in the [Production Stand
 - PRD-STD-004 (Security Scanning) — via CI pipeline security scan
 - PRD-STD-007 (Quality Gates) — via full CI pipeline
 - PRD-STD-008 (Dependency Compliance) — via CI pipeline dependency audit
+- PRD-STD-009 (Autonomous & Multi-Agent Governance) — via the small-team multi-agent setup flow

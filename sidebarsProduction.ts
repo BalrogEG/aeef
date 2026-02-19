@@ -15,6 +15,7 @@ const sidebars: SidebarsConfig = {
         'tutorials/starter-configs',
         'tutorials/ci-cd-pipeline-starter',
         'tutorials/first-ai-pr-tutorial',
+        'tutorials/small-team-multi-agent-starter',
         'tutorials/policy-templates',
       ],
     },

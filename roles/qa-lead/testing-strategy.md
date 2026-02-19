@@ -6,7 +6,7 @@ description: "Adapting testing strategy for AI-generated code."
 
 # Testing Strategy Adaptation
 
-AI-generated code requires an adapted testing strategy that addresses new failure modes, increased code volume, and the specific patterns of defects that AI introduces. This section defines the additional test types, coverage requirements, and validation approaches needed to maintain quality when AI tools accelerate code production. It implements [Pillar 2: Quality Assurance](/pillars/pillar-2-governance-risk/) and [PRD-STD-003](/production/standards/PRD-STD-003-testing-requirements) in the context of AI-assisted development.
+AI-generated code requires an adapted testing strategy that addresses new failure modes, increased code volume, and the specific patterns of defects that AI introduces. This section defines the additional test types, coverage requirements, and validation approaches needed to maintain quality when AI tools accelerate code production. It implements [Pillar 2: Governance & Risk](/pillars/pillar-2-governance-risk/) and [PRD-STD-003](/production/standards/PRD-STD-003-testing-requirements) in the context of AI-assisted development.
 
 ## Why Standard Testing Is Not Enough
 

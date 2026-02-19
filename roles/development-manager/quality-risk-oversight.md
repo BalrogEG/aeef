@@ -6,7 +6,7 @@ description: "Managing quality and risk in AI-augmented teams."
 
 # Quality & Risk Oversight
 
-When AI tools accelerate code production by 30-50%, quality assurance must scale proportionally or defects will accumulate. As a development manager, you are responsible for ensuring that the speed benefits of AI-assisted development are not purchased with quality debt. This section provides the review processes, risk indicators, escalation procedures, and dashboard designs you need to maintain quality at velocity. It implements [Pillar 2: Quality Assurance](/pillars/pillar-2-governance-risk/) and [Pillar 3: Governance & Oversight](/pillars/pillar-2-governance-risk/) at the team level.
+When AI tools accelerate code production by 30-50%, quality assurance must scale proportionally or defects will accumulate. As a development manager, you are responsible for ensuring that the speed benefits of AI-assisted development are not purchased with quality debt. This section provides the review processes, risk indicators, escalation procedures, and dashboard designs you need to maintain quality at velocity. It implements [Pillar 2: Governance & Risk](/pillars/pillar-2-governance-risk/) and [Pillar 3: Productivity Architecture](/pillars/pillar-3-productivity/) at the team level.
 
 ## The Quality Challenge
 

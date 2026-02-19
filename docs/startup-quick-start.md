@@ -17,7 +17,7 @@ If you have fewer than 20 engineers, start here — not at the [Transformation T
 | Team Size | Read This | Then Go To |
 |-----------|-----------|------------|
 | **Solo founder** | Day-1 Checklist below | [Solo Developer Path](#solo-developer-5-things-today) |
-| **2-5 engineers** | Day-1 Checklist + Week-1 Checklist | [Small Team Path](#small-team-2-5-engineers-10-things-this-week) |
+| **2-5 engineers** | Day-1 Checklist + Week-1 Checklist | [Small Team Path](#small-team-2-5-engineers-11-things-this-week) |
 | **6-20 engineers** | Full Quick-Start | [Growing Team Path](#growing-team-6-20-engineers-30-day-plan) |
 | **20+ engineers** | You're enterprise-adjacent | [Transformation Track](/transformation/) |
 
@@ -83,7 +83,7 @@ Create a `docs/decisions/` directory. When you make an architectural decision wi
 
 ---
 
-## Small Team (2-5 Engineers): 10 Things This Week
+## Small Team (2-5 Engineers): 11 Things This Week
 
 Everything from the solo developer list, plus:
 
@@ -132,7 +132,20 @@ Add to your sprint retro or hold separately:
 
 This replaces the enterprise "Community of Practice" and "Center of Excellence" with something that actually fits a small team.
 
-**Total time: ~2 hours for the team. You now have basic AI governance.**
+### 11. Set up a lightweight role-agent workflow (60-90 minutes)
+
+If your team wants multiple AI agents (for example product, developer, QA, and security), do not wait for enterprise orchestration platforms.
+
+Implement a lightweight version now:
+
+- Create agent IDs and role-owner mapping
+- Define one contract file per agent (allowed/forbidden actions)
+- Use handoff templates between agents
+- Require AI metadata in PRs (`AI-Usage`, `AI-Prompt-Ref`, `Agent-IDs`, `AI-Risk-Notes`)
+
+Follow the full setup guide: [Small-Team Multi-Agent Starter](/production/tutorials/small-team-multi-agent-starter).
+
+**Total time: ~3-4 hours for the team. You now have active AI governance, including baseline multi-agent controls.**
 
 ---
 
@@ -162,6 +175,7 @@ Adopt these three standards first — they cover the highest-risk areas:
 
 - Configure tool-specific rules files (`.cursorrules`, `CLAUDE.md`, `copilot-instructions.md`) per project
 - Add quality gates to CI (test coverage threshold, security scan pass)
+- Add role-agent registry, contracts, and handoff templates for AI workflows that span multiple roles
 - Start tracking: defects found in AI-assisted PRs vs non-AI PRs
 
 ### Week 4: Measure and Iterate
@@ -182,6 +196,7 @@ Adopt these three standards first — they cover the highest-risk areas:
 | PRD-STD-006 Technical Debt | Tech Lead |
 | PRD-STD-007 Quality Gates | DevOps/platform dev |
 | PRD-STD-008 Dependencies | DevOps/platform dev |
+| PRD-STD-009 Autonomous Agent Governance | Tech Lead (or Solution Architect) |
 
 ---
 
@@ -195,7 +210,7 @@ These AEEF components are important for enterprises but overkill for early-stage
 | Steering Committee | Your standup covers this | When you have 3+ engineering teams |
 | Formal phase gates with go/no-go | Decision speed matters more | When you're deploying to regulated environments |
 | AI Product Lifecycle (PRD-STD-010-012) | Only needed if shipping AI products | When you're building ML/AI-powered features |
-| Autonomous Agent Governance (PRD-STD-009) | Only needed for multi-agent workflows | When you're using agent orchestration |
+| Autonomous Agent Governance (PRD-STD-009) | You can defer enterprise orchestrator tooling, but still implement lightweight role-agent contracts and handoffs now | Adopt full orchestrator automation when workflows span multiple repos or teams |
 | KSA/SAMA/SDAIA regulatory profiles | Region-specific compliance | When operating in Saudi Arabia |
 | Center of Excellence | You ARE the center of excellence | When you have 50+ engineers |
 
@@ -207,6 +222,7 @@ Regardless of team size, these are non-negotiable:
 2. **No secrets in AI tools** — One leak can kill a startup.
 3. **Basic security scanning in CI** — Free tools exist. No excuse.
 4. **A written AI policy** — Even one page. If you get hacked and can't show you had basic controls, you're liable.
+5. **If using multiple AI agents, define contracts and handoffs** — without this, accountability breaks quickly.
 
 ---
 
@@ -227,6 +243,7 @@ The good news: if you followed this Quick-Start, you've already completed most o
 
 - [Starter Config Files](/production/tutorials/starter-configs) — Copy-paste ready configurations
 - [CI/CD Pipeline Starter](/production/tutorials/ci-cd-pipeline-starter) — GitHub Actions workflow
+- [Small-Team Multi-Agent Starter](/production/tutorials/small-team-multi-agent-starter) — Build role-based agents with framework-aligned controls
 - [Free-Tier Tool Comparison](/production/tool-guides/free-tier-comparison) — Pick your tools
 - [End-to-End Tutorial](/production/tutorials/first-ai-pr-tutorial) — Walk through your first governed AI PR
 - [FAQ & Troubleshooting](/pillars/faq) — Common questions and problems

@@ -12,7 +12,9 @@ These are copy-paste GitHub Actions workflows that implement the [Apply-Ready Ro
 
 This pipeline covers the Day 0-30 essentials: security scanning, dependency checking, and test execution. It uses entirely free, open-source tools.
 
-**Implements:** PRD-STD-002 (review enforcement), PRD-STD-003 (test execution), PRD-STD-004 (SAST), PRD-STD-008 (dependency scanning)
+**Implements:** PRD-STD-003 (test execution), PRD-STD-004 (SAST), PRD-STD-008 (dependency scanning), and PRD-STD-002 support checks (AI metadata visibility).
+
+**Important:** Full PRD-STD-002 review enforcement requires branch protection (`Require a pull request before merging` + required approvals). The minimal pipeline alone does not enforce reviewer approvals.
 
 Create `.github/workflows/ai-quality-gates.yml`:
 

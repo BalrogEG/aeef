@@ -39,7 +39,7 @@ The track is organized into three sections:
 
 ### 1. Standards & Guidelines (PRD-STD Series)
 
-The [Standards & Guidelines](/production/standards/) section contains eight formal standards that define mandatory and recommended practices for AI-assisted development. Each standard follows RFC 2119 language conventions and includes clear requirements, implementation guidance, and compliance criteria.
+The [Standards & Guidelines](/production/standards/) section contains twelve formal standards covering AI-assisted software delivery and AI-powered product behavior. Each standard follows RFC 2119 language conventions and includes clear requirements, implementation guidance, and compliance criteria.
 
 - [PRD-STD-001: Prompt Engineering](/production/standards/PRD-STD-001-prompt-engineering/) -- Structured prompt engineering for production development
 - [PRD-STD-002: Code Review](/production/standards/PRD-STD-002-code-review/) -- Mandatory review process for AI-generated code
@@ -49,6 +49,10 @@ The [Standards & Guidelines](/production/standards/) section contains eight form
 - [PRD-STD-006: Technical Debt](/production/standards/PRD-STD-006-technical-debt/) -- Debt identification, tracking, and remediation
 - [PRD-STD-007: Quality Gates](/production/standards/PRD-STD-007-quality-gates/) -- Build, test, security, and deployment gates
 - [PRD-STD-008: Dependency Compliance](/production/standards/PRD-STD-008-dependency-compliance/) -- License and supply chain security
+- [PRD-STD-009: Autonomous & Multi-Agent Governance](/production/standards/PRD-STD-009-autonomous-agent-governance/) -- Contracts, handoffs, and guardrails for agent workflows
+- [PRD-STD-010: AI Product Safety & Trust Controls](/production/standards/PRD-STD-010-ai-product-safety-trust/) -- Pre-launch and runtime trust controls for AI feature behavior
+- [PRD-STD-011: Model & Data Governance](/production/standards/PRD-STD-011-model-data-governance/) -- Data rights, lineage, evaluation integrity, and reproducibility controls
+- [PRD-STD-012: Inference Reliability & Cost Controls](/production/standards/PRD-STD-012-inference-reliability-cost-controls/) -- Runtime SLO, fallback, observability, and unit-cost governance
 
 ### 2. Best Practices
 
@@ -75,7 +79,7 @@ The AEEF framework defines three compliance levels for the Production Efficiency
 | Level | Name | Description | Key Requirements |
 |---|---|---|---|
 | **Level 1** | Foundation | Minimum viable governance | PRD-STD-002 (Code Review), PRD-STD-004 (Security Scanning), PRD-STD-008 (Dependency Compliance) |
-| **Level 2** | Managed | Comprehensive quality controls | All Level 1 + PRD-STD-001 (Prompts), PRD-STD-003 (Testing), PRD-STD-007 (Quality Gates) |
+| **Level 2** | Managed | Comprehensive quality and AI behavior controls | All Level 1 + PRD-STD-001 (Prompts), PRD-STD-003 (Testing), PRD-STD-007 (Quality Gates), PRD-STD-009 (Agent Governance), PRD-STD-010 (AI Safety & Trust), PRD-STD-011 (Model/Data Governance), PRD-STD-012 (Inference Reliability & Cost) |
 | **Level 3** | Optimized | Full lifecycle governance | All Level 2 + PRD-STD-005 (Documentation), PRD-STD-006 (Technical Debt), plus all best practices adopted |
 
 Each compliance level builds on the previous one. Organizations MUST achieve all requirements of a lower level before claiming compliance at a higher level. See the [Maturity Model](/pillars/maturity/) for a detailed assessment rubric and progression guidance.

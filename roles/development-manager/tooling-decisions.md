@@ -6,7 +6,7 @@ description: "Framework for making AI tool decisions at the team level."
 
 # Tooling Decisions
 
-AI development tools are evolving rapidly, with new entrants, features, and pricing models emerging monthly. As a development manager, you need a structured approach to evaluating, piloting, adopting, and sunsetting AI tools that balances innovation with stability. This section provides that framework, aligned with [Pillar 3: Governance & Oversight](/pillars/pillar-2-governance-risk/) and the technology strategy set by your [CTO](/roles/cto/) per [Technology Strategy & Tool Selection](/roles/cto/technology-strategy).
+AI development tools are evolving rapidly, with new entrants, features, and pricing models emerging monthly. As a development manager, you need a structured approach to evaluating, piloting, adopting, and sunsetting AI tools that balances innovation with stability. This section provides that framework, aligned with [Pillar 2: Governance & Risk](/pillars/pillar-2-governance-risk/) and the technology strategy set by your [CTO](/roles/cto/) per [Technology Strategy & Tool Selection](/roles/cto/technology-strategy).
 
 ## Evaluation Rubric
 
